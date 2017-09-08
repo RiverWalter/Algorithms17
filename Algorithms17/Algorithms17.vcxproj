@@ -111,6 +111,30 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="include\headers.h" />
+    <ClInclude Include="include\randomnumber.h" />
+    <ClInclude Include="include\testheaders.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Classical\BinarySearch.cpp" />
+    <ClCompile Include="src\Classical\EuclidGCD.cpp" />
+    <ClCompile Include="src\Classical\LinearSearch.cpp" />
+    <ClCompile Include="src\Classical\PrimalTestTrialDiv.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Sorting\BubbleSort.cpp" />
+    <ClCompile Include="src\Sorting\HeapSort.cpp" />
+    <ClCompile Include="src\Sorting\InsertionSort.cpp" />
+    <ClCompile Include="src\Sorting\MakeHeap.cpp" />
+    <ClCompile Include="src\Sorting\Merge2SortedSubArrA.cpp" />
+    <ClCompile Include="src\Sorting\MergeSort.cpp" />
+    <ClCompile Include="src\Sorting\QuickSort.cpp" />
+    <ClCompile Include="src\test\TestClassical.cpp" />
+    <ClCompile Include="src\test\TestEuclidGCD.cpp" />
+    <ClCompile Include="src\test\TestPrimality.cpp" />
+    <ClCompile Include="src\test\TestRandomNumber.cpp" />
+    <ClCompile Include="src\test\TestSorting.cpp" />
+    <ClCompile Include="src\utilities\Print1DArr.cpp" />
+    <ClCompile Include="src\utilities\RandomNumber.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
