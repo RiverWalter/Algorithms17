@@ -42,4 +42,9 @@ void HeapSort(int H[], int n);
 int LinearSearch(int a[], int n, int x);
 int BinarySearch(int a[], int n, int x);
 int EuclidGCD(int a, int b);
+
+//Exhaustive search
 bool PrimalTestTrialDiv(int n);
+void ESSubsetTree(int n);
+void ESPermutationTreeI(int n);
+void TestES0_1Knapsack(int aN, int aW, int *wa, int *va);

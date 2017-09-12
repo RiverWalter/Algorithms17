@@ -29,3 +29,6 @@ void TestEuclidGCDTypicalCases(bool showSteps = false);
 void TestPrimalTestTrialDiv(int n);
 void TestPrimalTestTrialDivDetail(int n);
 void TestPrimalTestTrialDivRange(int m, bool detail = false);
+
+//Exhaustive search
+void TestES0_1KnapsackA();

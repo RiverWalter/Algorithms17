@@ -5,8 +5,14 @@ void basicOutputTest();
 int main()
 {
 	SetRandSeed();
-    TestPrimalTestTrialDivRange(100, true);
-    //tttttyyy
+
+    //***Exhaustive search
+    TestES0_1KnapsackA();
+    //ESPermutationTreeI(7);
+    //ESSubsetTree(7);
+    //TestPrimalTestTrialDivRange(100, true);
+
+    //***Classical
     //BinarySearchTest(8);
     //LinearSearchTest(8);
     //TestEuclidGCDTypicalCases(true);
@@ -14,6 +20,8 @@ int main()
     //TestEuclidGCDSteps(168, 180);
     //TestEuclidGCDSteps(252, 105);
     //TestEuclidGCD(252, 105);
+
+    //***Sorting
     //HeapSortTest(8);
     //MakeHeapATest(8);
     //MergeSortTest(8);
@@ -21,6 +29,8 @@ int main()
 	//QuickSortTest(8);
 	//InsertionSortTest(8);
 	//BubbleSortTest(8);
+
+    //***Pseudo random number
     //RandRangeTest(10, 0, 100);
     //RandRangeSetTest(10);
     //RandDblTest(10);

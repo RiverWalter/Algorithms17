@@ -119,7 +119,10 @@
     <ClCompile Include="src\Classical\BinarySearch.cpp" />
     <ClCompile Include="src\Classical\EuclidGCD.cpp" />
     <ClCompile Include="src\Classical\LinearSearch.cpp" />
-    <ClCompile Include="src\Classical\PrimalTestTrialDiv.cpp" />
+    <ClCompile Include="src\ExhaustiveSearch\ES0_1Knapsack.cpp" />
+    <ClCompile Include="src\ExhaustiveSearch\ESPermutationTree.cpp" />
+    <ClCompile Include="src\ExhaustiveSearch\ESSubsetTree.cpp" />
+    <ClCompile Include="src\ExhaustiveSearch\PrimalTestTrialDiv.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Sorting\BubbleSort.cpp" />
     <ClCompile Include="src\Sorting\HeapSort.cpp" />
@@ -129,6 +132,7 @@
     <ClCompile Include="src\Sorting\MergeSort.cpp" />
     <ClCompile Include="src\Sorting\QuickSort.cpp" />
     <ClCompile Include="src\test\TestClassical.cpp" />
+    <ClCompile Include="src\test\TestES0_1KnapsackA().cpp" />
     <ClCompile Include="src\test\TestEuclidGCD.cpp" />
     <ClCompile Include="src\test\TestPrimality.cpp" />
     <ClCompile Include="src\test\TestRandomNumber.cpp" />
