@@ -32,3 +32,4 @@ void TestPrimalTestTrialDivRange(int m, bool detail = false);
 
 //Exhaustive search
 void TestES0_1KnapsackA();
+void TestES0_1KnapsackR(int n = 6, int wRange = 20, int vRange = 20);

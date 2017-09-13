@@ -95,5 +95,8 @@
     <ClCompile Include="src\test\TestES0_1KnapsackA().cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="src\test\TestES0_1KnapsackR.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

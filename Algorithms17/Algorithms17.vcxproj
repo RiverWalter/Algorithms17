@@ -133,6 +133,7 @@
     <ClCompile Include="src\Sorting\QuickSort.cpp" />
     <ClCompile Include="src\test\TestClassical.cpp" />
     <ClCompile Include="src\test\TestES0_1KnapsackA().cpp" />
+    <ClCompile Include="src\test\TestES0_1KnapsackR.cpp" />
     <ClCompile Include="src\test\TestEuclidGCD.cpp" />
     <ClCompile Include="src\test\TestPrimality.cpp" />
     <ClCompile Include="src\test\TestRandomNumber.cpp" />

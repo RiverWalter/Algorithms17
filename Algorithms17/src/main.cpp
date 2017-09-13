@@ -7,7 +7,9 @@ int main()
 	SetRandSeed();
 
     //***Exhaustive search
-    TestES0_1KnapsackA();
+    TestES0_1KnapsackR(10, 16, 26);
+    //TestES0_1KnapsackR();
+    //TestES0_1KnapsackA();
     //ESPermutationTreeI(7);
     //ESSubsetTree(7);
     //TestPrimalTestTrialDivRange(100, true);
