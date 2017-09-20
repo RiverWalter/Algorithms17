@@ -38,6 +38,8 @@ void Print1DArr(char a[], int n);
 void PrintDistData(int a[], int n);
 //打印2D距离矩阵(上三角)
 void PrintDistData_UT(int a[], int n);
+//打印2D距离矩阵到文件(上三角)
+void PrintDistData_UT_F(int a[], int n);
 void ConfigConsole();
 
 //sorting
@@ -57,6 +59,8 @@ int EuclidGCD(int a, int b);
 //Exhaustive search
 bool PrimalTestTrialDiv(int n);
 void ESSubsetTree(int n);
+void TestES0_1Knapsack(int aN, int aW, int *wa, int *va);
 void TestESTSP(int n, int *aMat);
 void TestESTSP_UT(int n, int *aMat);
-void TestES0_1Knapsack(int aN, int aW, int *wa, int *va);
+void TestESTSP_UT_F(int n, int *aMat);
+void TestESTSP_UT_N(int n, char *cityNames[], int *aMat);

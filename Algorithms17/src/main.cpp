@@ -8,6 +8,8 @@ int main()
     //SetLogFile();
 
     //***Exhaustive search
+    TestESTSP_UT_SD();
+    //TestESTSP_UT_FA();
     //TestESTSP_UTA();
     //TestESTSPA();
     //TestES0_1KnapsackR(10, 16, 26);
@@ -49,7 +51,7 @@ int main()
     //test1Dto2D();
     //basicOutputTest();
 
-    fprintf(logFP, "What's in your hand, is intelligence.\n");
+    //fprintf(logFP, "What's in your hand, is intelligence.\n");
     if (logFP != stdout)
         fclose(logFP);
     printf("Execution ended, press ENTER to return.\n");

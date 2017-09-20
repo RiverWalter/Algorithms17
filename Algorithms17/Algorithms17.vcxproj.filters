@@ -125,5 +125,14 @@
     <ClCompile Include="src\utilities\ConfigConsole.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="src\ExhaustiveSearch\ESTSP_UT_F.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\TestESTSP_UT_FA.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\TestESTSP_UT_SD.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -126,6 +126,7 @@
     <ClCompile Include="src\ExhaustiveSearch\ESTSP.cpp" />
     <ClCompile Include="src\ExhaustiveSearch\ESTSP_UT.cpp" />
     <ClCompile Include="src\ExhaustiveSearch\PrimalTestTrialDiv.cpp" />
+    <ClCompile Include="src\ExhaustiveSearch\ESTSP_UT_F.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Sorting\BubbleSort.cpp" />
     <ClCompile Include="src\Sorting\HeapSort.cpp" />
@@ -140,6 +141,8 @@
     <ClCompile Include="src\test\TestES0_1KnapsackR.cpp" />
     <ClCompile Include="src\test\TestESTSPA.cpp" />
     <ClCompile Include="src\test\TestESTSP_UTA.cpp" />
+    <ClCompile Include="src\test\TestESTSP_UT_FA.cpp" />
+    <ClCompile Include="src\test\TestESTSP_UT_SD.cpp" />
     <ClCompile Include="src\test\TestEuclidGCD.cpp" />
     <ClCompile Include="src\test\TestPrimality.cpp" />
     <ClCompile Include="src\test\TestRandomNumber.cpp" />

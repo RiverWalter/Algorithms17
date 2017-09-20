@@ -38,3 +38,5 @@ void ESPermutationTreeJ(int n);
 void ESPermutationTreeT(int n);
 void TestESTSPA();
 void TestESTSP_UTA();
+void TestESTSP_UT_FA();
+void TestESTSP_UT_SD();
