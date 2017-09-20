@@ -1,15 +1,20 @@
 #include "../include/testheaders.h"
-
-void basicOutputTest();
+#include "../include/test.h"
 
 int main()
 {
 	SetRandSeed();
+    ConfigConsole();
+    //SetLogFile();
 
     //***Exhaustive search
-    TestES0_1KnapsackR(10, 16, 26);
+    //TestESTSP_UTA();
+    //TestESTSPA();
+    //TestES0_1KnapsackR(10, 16, 26);
     //TestES0_1KnapsackR();
     //TestES0_1KnapsackA();
+    //ESPermutationTreeT(7);
+    //ESPermutationTreeJ(7);
     //ESPermutationTreeI(7);
     //ESSubsetTree(7);
     //TestPrimalTestTrialDivRange(100, true);
@@ -37,17 +42,17 @@ int main()
     //RandRangeSetTest(10);
     //RandDblTest(10);
     //RandTest(10);
+
+    //***Pure language test
+    //TestTimeb();
+    //Testfprintf();
+    //test1Dto2D();
     //basicOutputTest();
+
+    fprintf(logFP, "What's in your hand, is intelligence.\n");
+    if (logFP != stdout)
+        fclose(logFP);
+    printf("Execution ended, press ENTER to return.\n");
 	getchar();
 	return 0;
-}
-void basicOutputTest()
-{
-	printf("Hello world!\n");
-	auto n = 33;
-	printf("n=%d\n", n);
-	int a[] = { 22, 33, 44 };
-	for (auto i : a)
-		printf("%d\n", i);
-	std::cout << "abc";
 }

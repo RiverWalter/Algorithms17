@@ -4,7 +4,8 @@
 #include <iostream>
 using namespace std;
 
-#define Inf SHRT_MAX
+//#define Inf SHRT_MAX
+#define Inf INT_MAX
 
 #include <list>
 #include <set>
@@ -16,6 +17,7 @@ using namespace std;
 返回值：成功则返回秒数，失败则返回((time_t)-1)值，错误原因存于errno中。
 */
 #include <time.h>
+#include <sys\timeb.h>
 
 //初始化随机数发生器，即设置种子：
 //void srand(unsigned int _Seed);
@@ -25,9 +27,18 @@ using namespace std;
 
 #include "randomnumber.h"
 
+//handling log
+extern FILE *logFP;
+void SetLogFile();
+
 //utilities
 void Print1DArr(int a[], int n);
 void Print1DArr(char a[], int n);
+//打印2D距离矩阵
+void PrintDistData(int a[], int n);
+//打印2D距离矩阵(上三角)
+void PrintDistData_UT(int a[], int n);
+void ConfigConsole();
 
 //sorting
 void BubbleSort(int a[], int n);
@@ -46,5 +57,6 @@ int EuclidGCD(int a, int b);
 //Exhaustive search
 bool PrimalTestTrialDiv(int n);
 void ESSubsetTree(int n);
-void ESPermutationTreeI(int n);
+void TestESTSP(int n, int *aMat);
+void TestESTSP_UT(int n, int *aMat);
 void TestES0_1Knapsack(int aN, int aW, int *wa, int *va);

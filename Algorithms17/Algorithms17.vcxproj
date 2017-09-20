@@ -113,6 +113,7 @@
   <ItemGroup>
     <ClInclude Include="include\headers.h" />
     <ClInclude Include="include\randomnumber.h" />
+    <ClInclude Include="include\test.h" />
     <ClInclude Include="include\testheaders.h" />
   </ItemGroup>
   <ItemGroup>
@@ -122,6 +123,8 @@
     <ClCompile Include="src\ExhaustiveSearch\ES0_1Knapsack.cpp" />
     <ClCompile Include="src\ExhaustiveSearch\ESPermutationTree.cpp" />
     <ClCompile Include="src\ExhaustiveSearch\ESSubsetTree.cpp" />
+    <ClCompile Include="src\ExhaustiveSearch\ESTSP.cpp" />
+    <ClCompile Include="src\ExhaustiveSearch\ESTSP_UT.cpp" />
     <ClCompile Include="src\ExhaustiveSearch\PrimalTestTrialDiv.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Sorting\BubbleSort.cpp" />
@@ -131,15 +134,21 @@
     <ClCompile Include="src\Sorting\Merge2SortedSubArrA.cpp" />
     <ClCompile Include="src\Sorting\MergeSort.cpp" />
     <ClCompile Include="src\Sorting\QuickSort.cpp" />
+    <ClCompile Include="src\test\test.cpp" />
     <ClCompile Include="src\test\TestClassical.cpp" />
-    <ClCompile Include="src\test\TestES0_1KnapsackA().cpp" />
+    <ClCompile Include="src\test\TestES0_1KnapsackA.cpp" />
     <ClCompile Include="src\test\TestES0_1KnapsackR.cpp" />
+    <ClCompile Include="src\test\TestESTSPA.cpp" />
+    <ClCompile Include="src\test\TestESTSP_UTA.cpp" />
     <ClCompile Include="src\test\TestEuclidGCD.cpp" />
     <ClCompile Include="src\test\TestPrimality.cpp" />
     <ClCompile Include="src\test\TestRandomNumber.cpp" />
     <ClCompile Include="src\test\TestSorting.cpp" />
+    <ClCompile Include="src\utilities\ConfigConsole.cpp" />
     <ClCompile Include="src\utilities\Print1DArr.cpp" />
+    <ClCompile Include="src\utilities\PrintDistData.cpp" />
     <ClCompile Include="src\utilities\RandomNumber.cpp" />
+    <ClCompile Include="src\utilities\SetLogFile.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -33,3 +33,8 @@ void TestPrimalTestTrialDivRange(int m, bool detail = false);
 //Exhaustive search
 void TestES0_1KnapsackA();
 void TestES0_1KnapsackR(int n = 6, int wRange = 20, int vRange = 20);
+void ESPermutationTreeI(int n);
+void ESPermutationTreeJ(int n);
+void ESPermutationTreeT(int n);
+void TestESTSPA();
+void TestESTSP_UTA();

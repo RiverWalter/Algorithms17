@@ -24,6 +24,9 @@
     <ClInclude Include="include\testheaders.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="include\test.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Classical\BinarySearch.cpp">
@@ -92,10 +95,34 @@
     <ClCompile Include="src\ExhaustiveSearch\ES0_1Knapsack.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\test\TestES0_1KnapsackA().cpp">
+    <ClCompile Include="src\test\TestES0_1KnapsackR.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\test\TestES0_1KnapsackR.cpp">
+    <ClCompile Include="src\ExhaustiveSearch\ESTSP.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utilities\PrintDistData.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\TestES0_1KnapsackA.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\TestESTSPA.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ExhaustiveSearch\ESTSP_UT.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\TestESTSP_UTA.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utilities\SetLogFile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utilities\ConfigConsole.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
