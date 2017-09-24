@@ -39,4 +39,10 @@ void ESPermutationTreeT(int n);
 void TestESTSPA();
 void TestESTSP_UTA();
 void TestESTSP_UT_FA();
-void TestESTSP_UT_SD();
+void TestESTSP_UT_SD(int low, int high);
+void TestESTSP_UT_SD_P(int low, int high);
+void TestESTSP_UT_SD_TH(int low, int high);
+
+//Threading
+void TestThread1();
+void TestThread2();

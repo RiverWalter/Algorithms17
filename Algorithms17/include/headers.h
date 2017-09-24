@@ -29,7 +29,7 @@ using namespace std;
 
 //handling log
 extern FILE *logFP;
-void SetLogFile();
+void SetLogFile(const char *tag);
 
 //utilities
 void Print1DArr(int a[], int n);
@@ -39,8 +39,9 @@ void PrintDistData(int a[], int n);
 //打印2D距离矩阵(上三角)
 void PrintDistData_UT(int a[], int n);
 //打印2D距离矩阵到文件(上三角)
-void PrintDistData_UT_F(int a[], int n);
+void PrintDistData_UT_F(int a[], int n, int *cities = NULL);
 void ConfigConsole();
+void GetDateTime(char *str);
 
 //sorting
 void BubbleSort(int a[], int n);
@@ -64,3 +65,5 @@ void TestESTSP(int n, int *aMat);
 void TestESTSP_UT(int n, int *aMat);
 void TestESTSP_UT_F(int n, int *aMat);
 void TestESTSP_UT_N(int n, char *cityNames[], int *aMat);
+void TestESTSP_UT_NP(int n, char *cityNames[], int *aMat);
+void TestESTSP_UT_TH(int n, char *cityNames[], int *aMat);

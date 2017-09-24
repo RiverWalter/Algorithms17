@@ -3,6 +3,35 @@
 #include "../../include/headers.h"
 #include <sys\timeb.h>
 #include <iostream>
+#include <thread>
+
+void call_from_thread2(int i)
+{
+    std::cout << "Hello, World from a thread: " << i << std::endl;
+}
+void TestThread2()
+{
+    const int num_threads = 10;
+    std::thread t[num_threads];
+    for (int i = 0; i < num_threads; ++i) {
+        t[i] = std::thread(call_from_thread2, i);
+    }
+    std::cout << "Launched from the main\n";
+    //Join the threads with the main thread
+    for (int i = 0; i < num_threads; ++i) {
+        t[i].join();
+    }
+}
+
+void call_from_thread1()
+{
+    std::cout << "Hello, World from a thread!" << std::endl;
+}
+void TestThread1()
+{
+    std::thread t1(call_from_thread1);
+    t1.join();
+}
 
 void TestTimeb()
 {

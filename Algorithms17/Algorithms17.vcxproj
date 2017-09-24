@@ -125,6 +125,8 @@
     <ClCompile Include="src\ExhaustiveSearch\ESSubsetTree.cpp" />
     <ClCompile Include="src\ExhaustiveSearch\ESTSP.cpp" />
     <ClCompile Include="src\ExhaustiveSearch\ESTSP_UT.cpp" />
+    <ClCompile Include="src\ExhaustiveSearch\ESTSP_UT_P.cpp" />
+    <ClCompile Include="src\ExhaustiveSearch\ESTSP_UT_TH.cpp" />
     <ClCompile Include="src\ExhaustiveSearch\PrimalTestTrialDiv.cpp" />
     <ClCompile Include="src\ExhaustiveSearch\ESTSP_UT_F.cpp" />
     <ClCompile Include="src\main.cpp" />
@@ -143,11 +145,14 @@
     <ClCompile Include="src\test\TestESTSP_UTA.cpp" />
     <ClCompile Include="src\test\TestESTSP_UT_FA.cpp" />
     <ClCompile Include="src\test\TestESTSP_UT_SD.cpp" />
+    <ClCompile Include="src\test\TestESTSP_UT_SD_P.cpp" />
+    <ClCompile Include="src\test\TestESTSP_UT_SD_TH.cpp" />
     <ClCompile Include="src\test\TestEuclidGCD.cpp" />
     <ClCompile Include="src\test\TestPrimality.cpp" />
     <ClCompile Include="src\test\TestRandomNumber.cpp" />
     <ClCompile Include="src\test\TestSorting.cpp" />
     <ClCompile Include="src\utilities\ConfigConsole.cpp" />
+    <ClCompile Include="src\utilities\GetDateTime.cpp" />
     <ClCompile Include="src\utilities\Print1DArr.cpp" />
     <ClCompile Include="src\utilities\PrintDistData.cpp" />
     <ClCompile Include="src\utilities\RandomNumber.cpp" />

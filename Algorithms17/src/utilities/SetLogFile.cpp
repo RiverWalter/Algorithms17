@@ -4,7 +4,7 @@
 
 FILE *logFP = stdout; 
 
-void SetLogFile()
+void SetLogFile(const char *tag)
 {
     //Construct a date & time related log file name 
     struct timeb time_b;
@@ -12,8 +12,8 @@ void SetLogFile()
     struct tm * timeinfo = localtime(&time_b.time);
     char *ymdhms = new char[20];
     strftime(ymdhms, 20, "%Y%m%d%H%M%S", timeinfo);
-    char *logFileName = new char[50];
-    sprintf(logFileName, "output\\%s%03d.log", ymdhms, time_b.millitm);
+    char *logFileName = new char[100];
+    sprintf(logFileName, "output\\%s%03d_%s.log", ymdhms, time_b.millitm, tag);
     //printf("Current time: %s.%d\n", ymdhms, time_b.millitm);
     printf("Output to log file: %s\n", logFileName);
     

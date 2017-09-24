@@ -5,10 +5,22 @@ int main()
 {
 	SetRandSeed();
     ConfigConsole();
-    //SetLogFile();
+    SetLogFile("SD_TSP_TH_15");
+
+    char beginTimeStr[100];
+    GetDateTime(beginTimeStr);
+    printf("Begin time: %s\n", beginTimeStr);
+    if (logFP != stdout)
+        fprintf(logFP, "Begin time: %s\n", beginTimeStr);
+    clock_t begin = clock();
+    //Threading
+    TestESTSP_UT_SD_TH(7, 7);
+    //TestThread2();
+    //TestThread1();
 
     //***Exhaustive search
-    TestESTSP_UT_SD();
+    //TestESTSP_UT_SD_P(7, 7);
+    //TestESTSP_UT_SD(5, 5);
     //TestESTSP_UT_FA();
     //TestESTSP_UTA();
     //TestESTSPA();
@@ -51,10 +63,25 @@ int main()
     //test1Dto2D();
     //basicOutputTest();
 
+    clock_t end = clock();
+
+    printf("\nBegin time: %s\n", beginTimeStr);
+    char endTimeStr[100];
+    GetDateTime(endTimeStr);
+    printf("End time: %s\n", endTimeStr);
+    double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
+    printf("\nTime spent: %.3lf seconds.\n", time_spent);
+
     //fprintf(logFP, "What's in your hand, is intelligence.\n");
     if (logFP != stdout)
+    {
+        fprintf(logFP, "\nBegin time: %s\n", beginTimeStr);
+        fprintf(logFP, "End time: %s\n", endTimeStr);
+        fprintf(logFP, "\nTime spent: %.3lf seconds.\n", time_spent);
         fclose(logFP);
-    printf("Execution ended, press ENTER to return.\n");
+    }
+
+    printf("\nExecution ended, press ENTER to return.\n");
 	getchar();
 	return 0;
 }

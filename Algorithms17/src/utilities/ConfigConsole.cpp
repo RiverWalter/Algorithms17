@@ -3,7 +3,8 @@ void ConfigConsole()
 {
     //set forecolor to moderate White,
     //and background color to green.
-    system("color 27");
+    //system("color 27");
+    system("color 2F");
 
     //set fontsize
     HANDLE outcon = GetStdHandle(STD_OUTPUT_HANDLE);

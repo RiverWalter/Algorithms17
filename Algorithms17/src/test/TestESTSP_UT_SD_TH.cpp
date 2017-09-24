@@ -1,9 +1,10 @@
 #include "../../include/headers.h"
-void TestESTSP_UT_SD(int low = 0, int high = 0)
+//Solving ESTSP by threading
+void TestESTSP_UT_SD_TH(int low = 0, int high = 0)
 {
     char *cityNames[] =
     { "济南", "青岛", "淄博", "枣庄", "东营", "烟台", "潍坊", "济宁",
-      "泰安", "威海", "日照", "莱芜", "临沂", "德州", "聊城", "滨州", "菏泽"
+        "泰安", "威海", "日照", "莱芜", "临沂", "德州", "聊城", "滨州", "菏泽"
     };
     int N0 = 8;
     int distMat0[] = {
@@ -147,34 +148,34 @@ void TestESTSP_UT_SD(int low = 0, int high = 0)
         switch (i)
         {
         case 0:
-            TestESTSP_UT_N(N0, cityNames, distMat0);
+            TestESTSP_UT_TH(N0, cityNames, distMat0);
             break;
         case 1:
-            TestESTSP_UT_N(N1, cityNames, distMat1);
+            TestESTSP_UT_TH(N1, cityNames, distMat1);
             break;
         case 2:
-            TestESTSP_UT_N(N2, cityNames, distMat2);
+            TestESTSP_UT_TH(N2, cityNames, distMat2);
             break;
         case 3:
-            TestESTSP_UT_N(N3, cityNames, distMat3);
+            TestESTSP_UT_TH(N3, cityNames, distMat3);
             break;
         case 4:
-            TestESTSP_UT_N(N4, cityNames, distMat4);
+            TestESTSP_UT_TH(N4, cityNames, distMat4);
             break;
         case 5:
-            TestESTSP_UT_N(N5, cityNames, distMat5);
+            TestESTSP_UT_TH(N5, cityNames, distMat5);
             break;
         case 6:
-            TestESTSP_UT_N(N6, cityNames, distMat6);
+            TestESTSP_UT_TH(N6, cityNames, distMat6);
             break;
         case 7:
-            TestESTSP_UT_N(N7, cityNames, distMat7);
+            TestESTSP_UT_TH(N7, cityNames, distMat7);
             break;
         case 8:
-            TestESTSP_UT_N(N8, cityNames, distMat8);
+            TestESTSP_UT_TH(N8, cityNames, distMat8);
             break;
         case 9:
-            TestESTSP_UT_N(N9, cityNames, distMat9);
+            TestESTSP_UT_TH(N9, cityNames, distMat9);
             break;
         }
     }

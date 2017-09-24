@@ -4,9 +4,9 @@ using namespace std;
 static int *distMat;
 static int *curPath;
 static int *minPath;
-static int N, minDist, cnt;
+static int N, minDist;
 
-void CheckNewBestPath_UT()
+void CheckNewBestPath_UT_P()
 {
     int d = 0, j, p, ia, ja;
     for (int i = 0; i < N; i++) {
@@ -25,53 +25,54 @@ void CheckNewBestPath_UT()
         for (int i = 0; i < N; i++)
             minPath[i] = curPath[i];
     }
-    printf("%7d:", cnt++);
-    for (int i = 0; i <= N; i++)
-        printf("%2c", 65 + curPath[i % N]);
-    if (d == Inf)
-        printf("%5c", 'x');
-    else
-        printf("%5d", d);
-    if (minDist == Inf)
-        printf("%5c", 'x');
-    else
-        printf("%5d", minDist);
-    printf("\n");
 }
-void ESTSP_UT(int i)
+void ESTSP_UT_P(int i)
 {
     if (i < N - 1)
         for (int j = i; j < N; j++) {
             swap(curPath[i], curPath[j]);
-            ESTSP_UT(i + 1);
+            ESTSP_UT_P(i + 1);
             swap(curPath[i], curPath[j]);
         }
     else
-        CheckNewBestPath_UT();
+        CheckNewBestPath_UT_P();
 }
 
-void TestESTSP_UT(int n, int *aMat)
+void TestESTSP_UT_NP(int n, char *cityNames[], int *aMat)
 {
     N = n;
-    cnt = 0;
-    minDist = Inf; 
+    minDist = Inf;
     curPath = new int[N];
     minPath = new int[N];
     distMat = aMat;
 
     //初始化城市排列表
-    for (int i = 0; i<N; i++)
+    for (int i = 0; i < N; i++)
         curPath[i] = i;
-    printf("测试TSP的穷举搜索...\n");
-    printf("N = %d\n", N);
-    PrintDistData_UT(distMat, N);
-    printf("\n");
-    printf("%7s  %-*s curD minD\n", "No", 2 * N + 1, "Path");
-    ESTSP_UT(1);
-    printf("最短路径：");
+    fprintf(logFP, "测试TSP的穷举搜索...\n");
+    fprintf(logFP, "城市列表：\n");
+    for (int i = 0; i < N; i++)
+    {
+        if (i > 0)
+            fprintf(logFP, ", ");
+        fprintf(logFP, cityNames[i]);
+    }
+    fprintf(logFP, "\n");
+    fprintf(logFP, "N = %d\n", N);
+    PrintDistData_UT_F(distMat, N);
+    fprintf(logFP, "\n");
+    ESTSP_UT_P(1);
+    fprintf(logFP, "最短路径：");
     for (int i = 0; i <= N; i++)
-        printf("%2c", 65 + minPath[i % N]);
-    printf("\n最短路程：%d\n\n", minDist);
+        fprintf(logFP, "%2c", 65 + minPath[i % N]);
+    fprintf(logFP, "\n");
+    for (int i = 0; i <= N; i++)
+    {
+        if (i > 0)
+            fprintf(logFP, ", ");
+        fprintf(logFP, cityNames[minPath[i % N]]);
+    }
+    fprintf(logFP, "\n最短路程：%d\n\n", minDist);
     delete minPath;
     delete curPath;
 }

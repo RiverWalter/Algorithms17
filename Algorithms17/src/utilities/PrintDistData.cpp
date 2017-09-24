@@ -45,17 +45,24 @@ void PrintDistData_UT(int a[], int n)
     }
 }
 //打印2D距离矩阵到文件(上三角)
-void PrintDistData_UT_F(int a[], int n)
+void PrintDistData_UT_F(int a[], int n, int *cities)
 {
     int p;
     fprintf(logFP, "距离矩阵：\n");
     fprintf(logFP, "  ");
-    for (int i = 0; i < n; i++)
-        fprintf(logFP, "%5c", i + 65);
+    if (cities == NULL)
+        for (int i = 0; i < n; i++)
+            fprintf(logFP, "%5c", i + 65);
+    else
+        for (int i = 0; i < n; i++)
+            fprintf(logFP, "%5c", cities[i] + 65);
     fprintf(logFP, "\n");
     for (int i = 0; i < n; i++)
     {
-        fprintf(logFP, "%2c", i + 65);
+        if (cities == NULL)
+            fprintf(logFP, "%2c", i + 65);
+        else
+            fprintf(logFP, "%2c", cities[i] + 65);
         for (int j = 0; j <= i; j++)
             fprintf(logFP, "%5c", ' ');
         for (int j = i + 1; j < n; j++)

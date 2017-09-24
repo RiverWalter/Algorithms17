@@ -1,12 +1,10 @@
 #include "../../include/headers.h"
-#include <vector>
 using namespace std;
 
 static int *distMat;
 static int *curPath;
 static int *minPath;
 static int N, minDist, cnt;
-static vector <int> v;
 
 void CheckNewBestPath()
 {
