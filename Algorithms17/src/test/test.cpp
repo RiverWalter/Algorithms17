@@ -4,7 +4,14 @@
 #include <sys\timeb.h>
 #include <iostream>
 #include <thread>
+#include <vector>
 
+vector<vector<int>> a;
+
+void test2Darr()
+{
+
+}
 void call_from_thread2(int i)
 {
     std::cout << "Hello, World from a thread: " << i << std::endl;

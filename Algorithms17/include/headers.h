@@ -36,6 +36,8 @@ void Print1DArr(int a[], int n);
 void Print1DArr(char a[], int n);
 //打印2D距离矩阵
 void PrintDistData(int a[], int n);
+//打印2D距离矩阵到文件
+void PrintDistData_F(int a[], int n);
 //打印2D距离矩阵(上三角)
 void PrintDistData_UT(int a[], int n);
 //打印2D距离矩阵到文件(上三角)
@@ -67,3 +69,8 @@ void TestESTSP_UT_F(int n, int *aMat);
 void TestESTSP_UT_N(int n, char *cityNames[], int *aMat);
 void TestESTSP_UT_NP(int n, char *cityNames[], int *aMat);
 void TestESTSP_UT_TH(int n, char *cityNames[], int *aMat);
+
+//Dynamic programming
+void TestTSP_BHK_DPv(int n, int *aMat);
+void TestTSP_BHK_DP(int n, int *aMat);
+void TestTSP_BHK_DP_N(int n, char *cityNames[], int *aMat);

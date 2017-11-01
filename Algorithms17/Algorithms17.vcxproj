@@ -120,6 +120,9 @@
     <ClCompile Include="src\Classical\BinarySearch.cpp" />
     <ClCompile Include="src\Classical\EuclidGCD.cpp" />
     <ClCompile Include="src\Classical\LinearSearch.cpp" />
+    <ClCompile Include="src\DP\TSP_BHK_DP.cpp" />
+    <ClCompile Include="src\DP\TSP_BHK_DPv.cpp" />
+    <ClCompile Include="src\DP\TSP_BHK_DP_N.cpp" />
     <ClCompile Include="src\ExhaustiveSearch\ES0_1Knapsack.cpp" />
     <ClCompile Include="src\ExhaustiveSearch\ESPermutationTree.cpp" />
     <ClCompile Include="src\ExhaustiveSearch\ESSubsetTree.cpp" />
@@ -148,9 +151,13 @@
     <ClCompile Include="src\test\TestESTSP_UT_SD_P.cpp" />
     <ClCompile Include="src\test\TestESTSP_UT_SD_TH.cpp" />
     <ClCompile Include="src\test\TestEuclidGCD.cpp" />
+    <ClCompile Include="src\test\TestHash.cpp" />
     <ClCompile Include="src\test\TestPrimality.cpp" />
     <ClCompile Include="src\test\TestRandomNumber.cpp" />
     <ClCompile Include="src\test\TestSorting.cpp" />
+    <ClCompile Include="src\test\TestTSP_BHK_DPA.cpp" />
+    <ClCompile Include="src\test\TestTSP_BHK_DPvA.cpp" />
+    <ClCompile Include="src\test\TestTSP_BHK_DP_N_SD.cpp" />
     <ClCompile Include="src\utilities\ConfigConsole.cpp" />
     <ClCompile Include="src\utilities\GetDateTime.cpp" />
     <ClCompile Include="src\utilities\Print1DArr.cpp" />

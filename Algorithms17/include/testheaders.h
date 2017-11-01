@@ -43,6 +43,7 @@ void TestESTSP_UT_SD(int low, int high);
 void TestESTSP_UT_SD_P(int low, int high);
 void TestESTSP_UT_SD_TH(int low, int high);
 
-//Threading
-void TestThread1();
-void TestThread2();
+//Dynamic programming
+void TestTSP_BHK_DPvA();
+void TestTSP_BHK_DPA();
+void TestTSP_BHK_DP_N_SD(int N);

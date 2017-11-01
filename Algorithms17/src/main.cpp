@@ -5,7 +5,8 @@ int main()
 {
 	SetRandSeed();
     ConfigConsole();
-    SetLogFile("SD_TSP_TH_15");
+    //SetLogFile("SD_TSP_TH_15");
+    SetLogFile("BHK_DP_N_SD(17)");
 
     char beginTimeStr[100];
     GetDateTime(beginTimeStr);
@@ -13,10 +14,13 @@ int main()
     if (logFP != stdout)
         fprintf(logFP, "Begin time: %s\n", beginTimeStr);
     clock_t begin = clock();
-    //Threading
-    TestESTSP_UT_SD_TH(7, 7);
-    //TestThread2();
-    //TestThread1();
+    //***Dynamic programming
+    TestTSP_BHK_DP_N_SD(17);
+    //TestTSP_BHK_DPA();
+    //TestTSP_BHK_DPvA();
+
+    //***Threading
+    //TestESTSP_UT_SD_TH(7, 7);
 
     //***Exhaustive search
     //TestESTSP_UT_SD_P(7, 7);
@@ -58,6 +62,10 @@ int main()
     //RandTest(10);
 
     //***Pure language test
+    //threading
+    //TestThread2();
+    //TestThread1();
+    //TestHash();
     //TestTimeb();
     //Testfprintf();
     //test1Dto2D();
