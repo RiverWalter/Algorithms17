@@ -2,38 +2,59 @@
 void BubbleSortTest(int n)
 {
 	int *a = new int[n];
-	printf("测试冒泡排序算法：\n");
-	RandRangeArr(n, 0, 99, a);
-	printf("排序前数组:\n");
-	Print1DArr(a, n);
+	printf("测试冒泡排序算法：n = %d\n", n);
+    int high = n <= 20 ? 99 : n * 10 - 1;
+	RandRangeArr(n, 0, high, a);
+    printf("排序前数组:\n");
+    Print1DArr(a, n, false);
+    if (n > 20 ) {
+        printf("......\n");
+    }
 	BubbleSort(a, n);
-	printf("排序后数组:\n");
-	Print1DArr(a, n);
-	delete a;
+    printf("排序后数组:\n");
+    Print1DArr(a, n, false);
+    if (n > 20) {
+        printf("......\n");
+    }
+    delete a;
 }
 void InsertionSortTest(int n)
 {
 	int *a = new int[n];
-	printf("测试插入排序算法：\n");
-	RandRangeArr(n, 0, 99, a);
+	printf("测试插入排序算法：n = %d\n", n);
+    int high = n <= 20 ? 99 : n * 10 - 1;
+    RandRangeArr(n, 0, high, a);
 	printf("排序前数组:\n");
-	Print1DArr(a, n);
+    Print1DArr(a, n, false);
+    if (n > 20 ) {
+        printf("......\n");
+    }
 	InsertionSort(a, n);
 	printf("排序后数组:\n");
-	Print1DArr(a, n);
-	delete a;
+    Print1DArr(a, n, false);
+    if (n > 20) {
+        printf("......\n");
+    }
+    delete a;
 }
 void QuickSortTest(int n)
 {
 	int *a = new int[n];
-	printf("测试快速排序算法：\n");
-	RandRangeArr(n, 0, 99, a);
-	printf("排序前数组:\n");
-	Print1DArr(a, n);
+	printf("测试快速排序算法：n = %d\n", n);
+    int high = n <= 20 ? 99 : n * 10 - 1;
+    RandRangeArr(n, 0, high, a);
+    printf("排序前数组:\n");
+    Print1DArr(a, n, false);
+    if (n > 20) {
+        printf("......\n");
+    };
 	QuickSort(a, 0, n - 1);
 	printf("排序后数组:\n");
-	Print1DArr(a, n);
-	delete a;
+    Print1DArr(a, n, false);
+    if (n > 20) {
+        printf("......\n");
+    }
+    delete a;
 }
 void Merge2SortedSubArrATest(int m, int n)
 {
@@ -55,13 +76,20 @@ void Merge2SortedSubArrATest(int m, int n)
 void MergeSortTest(int n)
 {
     int *a = new int[n];
-    printf("测试合并排序算法(递归实现)：\n");
-    RandRangeArr(n, 0, 500, a);
+    printf("测试合并排序算法(递归实现)：n = %d\n", n);
+    int high = n <= 20 ? 99 : n * 10 - 1;
+    RandRangeArr(n, 0, high, a);
     printf("排序前数组:\n");
-    Print1DArr(a, n);
+    Print1DArr(a, n, false);
+    if (n > 20) {
+        printf("......\n");
+    };
     MergeSort(a, 0, n - 1);
     printf("排序后数组:\n");
-    Print1DArr(a, n);
+    Print1DArr(a, n, false);
+    if (n > 20) {
+        printf("......\n");
+    }
     delete a;
 }
 void MakeHeapATest(int n)
@@ -79,13 +107,20 @@ void MakeHeapATest(int n)
 void HeapSortTest(int n)
 {
     int *a = new int[n];
-    printf("测试堆排序算法：\n");
-    RandRangeArr(n, 0, 100, a);
+    printf("测试堆排序算法：n = %d\n", n);
+    int high = n <= 20 ? 99 : n * 10 - 1;
+    RandRangeArr(n, 0, high, a);
     printf("排序前数组:\n");
-    Print1DArr(a, n);
+    Print1DArr(a, n, false);
+    if (n > 20) {
+        printf("......\n");
+    };
     HeapSort(a, n);
     printf("排序后数组:\n");
-    Print1DArr(a, n);
+    Print1DArr(a, n, false);
+    if (n > 20) {
+        printf("......\n");
+    }
     delete a;
 }
 

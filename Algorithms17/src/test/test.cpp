@@ -8,6 +8,14 @@
 
 vector<vector<int>> a;
 
+/////////
+void basicTests()
+{
+    printf("RAND_MAX = %d", RAND_MAX);
+    ////test sizeof
+    //int n;
+    //printf("sizeof int = %d, size of n = %d", sizeof(int), sizeof(n));
+}
 void test2Darr()
 {
 

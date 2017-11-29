@@ -3,10 +3,10 @@
 
 int main()
 {
-	SetRandSeed();
+	SetRandSeed(23);
     ConfigConsole();
     //SetLogFile("SD_TSP_TH_15");
-    SetLogFile("BHK_DP_N_SD(17)");
+    //SetLogFile("BHK_DP_N_SD(17)");
 
     char beginTimeStr[100];
     GetDateTime(beginTimeStr);
@@ -15,7 +15,7 @@ int main()
         fprintf(logFP, "Begin time: %s\n", beginTimeStr);
     clock_t begin = clock();
     //***Dynamic programming
-    TestTSP_BHK_DP_N_SD(17);
+    //TestTSP_BHK_DP_N_SD(17);
     //TestTSP_BHK_DPA();
     //TestTSP_BHK_DPvA();
 
@@ -47,13 +47,13 @@ int main()
     //TestEuclidGCD(252, 105);
 
     //***Sorting
-    //HeapSortTest(8);
+    //HeapSortTest(1000000);
     //MakeHeapATest(8);
-    //MergeSortTest(8);
+    //MergeSortTest(100000);
     //Merge2SortedSubArrATest(3, 4);
-	//QuickSortTest(8);
-	//InsertionSortTest(8);
-	//BubbleSortTest(8);
+	//QuickSortTest(1000000);
+	//InsertionSortTest(100000);
+	//BubbleSortTest(30000);
 
     //***Pseudo random number
     //RandRangeTest(10, 0, 100);
@@ -62,14 +62,17 @@ int main()
     //RandTest(10);
 
     //***Pure language test
-    //threading
+    ////threading
     //TestThread2();
     //TestThread1();
+    ////basic languange tests
     //TestHash();
     //TestTimeb();
     //Testfprintf();
     //test1Dto2D();
     //basicOutputTest();
+    ////
+    //basicTests();
 
     clock_t end = clock();
 
@@ -78,14 +81,30 @@ int main()
     GetDateTime(endTimeStr);
     printf("End time: %s\n", endTimeStr);
     double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
-    printf("\nTime spent: %.3lf seconds.\n", time_spent);
+    if (time_spent > 3600) {
+        printf("\nTime spent: %.3lf hours.\n", time_spent / 3600);
+    }
+    else if (time_spent > 60) {
+        printf("\nTime spent: %.3lf minutes.\n", time_spent / 60);
+    }
+    else {
+        printf("\nTime spent: %.3lf seconds.\n", time_spent);
+    }
 
     //fprintf(logFP, "What's in your hand, is intelligence.\n");
     if (logFP != stdout)
     {
         fprintf(logFP, "\nBegin time: %s\n", beginTimeStr);
         fprintf(logFP, "End time: %s\n", endTimeStr);
-        fprintf(logFP, "\nTime spent: %.3lf seconds.\n", time_spent);
+        if (time_spent > 3600) {
+            fprintf(logFP, "\nTime spent: %.3lf hours.\n", time_spent / 3600);
+        }
+        else if (time_spent > 60) {
+            fprintf(logFP, "\nTime spent: %.3lf minutes.\n", time_spent / 60);
+        }
+        else {
+            fprintf(logFP, "\nTime spent: %.3lf seconds.\n", time_spent);
+        }
         fclose(logFP);
     }
 

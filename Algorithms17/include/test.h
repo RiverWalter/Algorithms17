@@ -11,3 +11,5 @@ void Testfprintf();
 void TestTimeb();
 
 void TestHash();
+
+void basicTests();

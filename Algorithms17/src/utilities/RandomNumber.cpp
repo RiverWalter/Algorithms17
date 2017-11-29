@@ -25,8 +25,12 @@ double RandDbl()
 	return (double)rand()/(RAND_MAX+1);
 }
 //Set seed for rand()
-void SetRandSeed()
+void SetRandSeed(int seed)
 {
-	time_t t;
-	srand((unsigned)time(&t));
+    if (seed != -1)
+        srand(seed);
+    else {
+        time_t t;
+        srand((unsigned)time(&t));
+    }
 }

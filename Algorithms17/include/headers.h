@@ -32,7 +32,7 @@ extern FILE *logFP;
 void SetLogFile(const char *tag);
 
 //utilities
-void Print1DArr(int a[], int n);
+void Print1DArr(int a[], int n, bool printAll = true);
 void Print1DArr(char a[], int n);
 //¥Ú”°2Dæ‡¿Îæÿ’Û
 void PrintDistData(int a[], int n);

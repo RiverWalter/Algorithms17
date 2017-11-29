@@ -12,4 +12,4 @@ void RandRangeArr(int n, int low, int high, int a[]);
 //Generate random integers to set<int> in the range [low, high]
 void RandRangeSet(int n, int low, int high, set<int> &randSet);
 //Set seed for rand()
-void SetRandSeed();
+void SetRandSeed(int seed = -1);
