@@ -2,12 +2,13 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-static vector<int> s;
 
+void Check0_1KSOptimal();
+static vector<int> s;
 static vector <int> w;
 static vector <int> v;
 static vector <int> x;
-static int N, W, V, cnt;
+static int N, W, V;
 
 void ES0_1Knapsack(int n)
 {
@@ -19,30 +20,33 @@ void ES0_1Knapsack(int n)
         ES0_1Knapsack(n - 1);
         s.pop_back();
     }
-    else {
-        printf("%4d: ", cnt++);
-        int wt = 0, vt = 0;
-        for (int i = 0; i < N; i++)
-        {
-            printf("%3d", s[i]);
-            wt += s[i] * w[i];
-            vt += s[i] * v[i];
-        }
-        if (wt <= W && vt > V)
-        {
-            V = vt;
-            x = s;
-        }
-        printf(" %4d %4d %5d\n", wt, vt, V);
-    }
+    else
+        Check0_1KSOptimal();
 }
-
-void TestES0_1Knapsack(int aN, int aW, int *wa, int *va)
+void Check0_1KSOptimal()
+{
+    static int cnt = 0;
+    printf("%4d: ", cnt++);
+    int wt = 0, vt = 0;
+    for (int i = 0; i < N; i++)
+    {
+        printf("%3d", s[i]);
+        wt += s[i] * w[i];
+        vt += s[i] * v[i];
+    }
+    if (wt <= W && vt > V)
+    {
+        V = vt;
+        x = s;
+    }
+    printf(" %4d %4d %5d\n", wt, vt, V);
+}
+void TestES0_1Knapsack(int aN, int aW, 
+    int *wa, int *va)
 {
     N = aN;
     W = aW;
     V = 0;
-    cnt = 0;
     s.clear();
     w.clear();
     v.clear();
@@ -67,7 +71,7 @@ void TestES0_1Knapsack(int aN, int aW, int *wa, int *va)
         printf("%3d", v[i]);
     printf("\n\n");
 
-    printf("The process of exhaustive search:\n");
+    printf("The exhaustive search process:\n");
     printf("  No  ");
     for (int i = 0; i < N; i++)
         printf("%3d", i);
@@ -87,5 +91,6 @@ void TestES0_1Knapsack(int aN, int aW, int *wa, int *va)
         printf("%3d", x[i]);
     }
     printf("\n");
-    printf("Best Weight = %d, Best Value = %d\n\n", bestW, V);
+    printf("Best Weight: %d\n", bestW);
+    printf("Best Value: %d\n\n", V);
 }
