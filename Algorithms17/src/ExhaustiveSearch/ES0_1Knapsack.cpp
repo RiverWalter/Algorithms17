@@ -34,7 +34,6 @@ void ES0_1Knapsack(int n)
             x = s;
         }
         printf(" %4d %4d %5d\n", wt, vt, V);
-        return;
     }
 }
 

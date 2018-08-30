@@ -3,7 +3,8 @@
 
 int main()
 {
-	SetRandSeed(23);
+	SetRandSeed(-1);
+    //SetRandSeed(23);
     ConfigConsole();
     //SetLogFile("SD_TSP_TH_15");
     //SetLogFile("BHK_DP_N_SD(17)");
@@ -22,20 +23,38 @@ int main()
     //***Threading
     //TestESTSP_UT_SD_TH(7, 7);
 
+    //Divide and conquer
+    //ChessBoardTilingTest(3);
+
     //***Exhaustive search
     //TestESTSP_UT_SD_P(7, 7);
     //TestESTSP_UT_SD(5, 5);
     //TestESTSP_UT_FA();
     //TestESTSP_UTA();
     //TestESTSPA();
+
+    //EnumSubsets(3);
+    //EnumSubsetsT(3);
     //TestES0_1KnapsackR(10, 16, 26);
     //TestES0_1KnapsackR();
-    //TestES0_1KnapsackA();
+    TestES0_1KnapsackA();
+
     //ESPermutationTreeT(7);
     //ESPermutationTreeJ(7);
     //ESPermutationTreeI(7);
     //ESSubsetTree(7);
     //TestPrimalTestTrialDivRange(100, true);
+    //PermutingCaller(4);
+    //Permuting(4);
+    /*
+    PermutingCallerA(1);
+    PermutingCallerA(2);
+    PermutingCallerA(3);
+    PermutingCallerA(4);
+    PermutingCallerA(5);
+    */
+    //PermutingHeapCaller(4);
+    //PermutingSJT(3);
 
     //***Classical
     //BinarySearchTest(8);
@@ -45,15 +64,17 @@ int main()
     //TestEuclidGCDSteps(168, 180);
     //TestEuclidGCDSteps(252, 105);
     //TestEuclidGCD(252, 105);
+    //TestShuffle(13);
 
     //***Sorting
-    //HeapSortTest(1000000);
+    //HeapSortTest(8);
     //MakeHeapATest(8);
     //MergeSortTest(100000);
     //Merge2SortedSubArrATest(3, 4);
 	//QuickSortTest(1000000);
 	//InsertionSortTest(100000);
-	//BubbleSortTest(30000);
+	//BubbleSortTest(10);
+    //SelectionSortTest(10);
 
     //***Pseudo random number
     //RandRangeTest(10, 0, 100);

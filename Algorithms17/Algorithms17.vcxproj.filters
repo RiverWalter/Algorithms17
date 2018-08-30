@@ -170,5 +170,35 @@
     <ClCompile Include="src\test\TestTSP_BHK_DP_N_SD.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="src\Sorting\SelectionSort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Classical\Shuffle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\TestShuffle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ExhaustiveSearch\Permuting.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ExhaustiveSearch\PermutingA.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ExhaustiveSearch\PermutingHeap.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ExhaustiveSearch\PermutingSJT.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ExhaustiveSearch\EnumSubsets.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ExhaustiveSearch\EnumSubsetsT.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DivideAndConquer\ChessBoardTiling.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

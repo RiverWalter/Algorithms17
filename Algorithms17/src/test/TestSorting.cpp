@@ -1,8 +1,8 @@
 #include "../../include/headers.h"
-void BubbleSortTest(int n)
+void SelectionSortTest(int n)
 {
 	int *a = new int[n];
-	printf("测试冒泡排序算法：n = %d\n", n);
+	printf("测试选择排序算法：n = %d\n", n);
     int high = n <= 20 ? 99 : n * 10 - 1;
 	RandRangeArr(n, 0, high, a);
     printf("排序前数组:\n");
@@ -10,7 +10,26 @@ void BubbleSortTest(int n)
     if (n > 20 ) {
         printf("......\n");
     }
-	BubbleSort(a, n);
+	SelectionSort(a, n);
+    printf("排序后数组:\n");
+    Print1DArr(a, n, false);
+    if (n > 20) {
+        printf("......\n");
+    }
+    delete a;
+}
+void BubbleSortTest(int n)
+{
+    int *a = new int[n];
+    printf("测试冒泡排序算法：n = %d\n", n);
+    int high = n <= 20 ? 99 : n * 10 - 1;
+    RandRangeArr(n, 0, high, a);
+    printf("排序前数组:\n");
+    Print1DArr(a, n, false);
+    if (n > 20) {
+        printf("......\n");
+    }
+    BubbleSort(a, n);
     printf("排序后数组:\n");
     Print1DArr(a, n, false);
     if (n > 20) {

@@ -12,13 +12,13 @@ void TestEuclidGCDSteps(int a, int b)
     auto a0 = a, b0 = b;
     printf("\ta\tb\tr\tq\n");
     int r, q;
-    do {
+    while (b) {
         r = a % b;
         q = a / b;
         printf("\t%d\t%d\t%d\t%d\n", a, b, r, q);
         a = b;
         b = r;
-    } while (r);
+    } ;
     printf("\t%d\t%d\t%d\t-\n", a, b, r);
     printf("The GCD of %d and %d is %d\n", a0, b0, a);
 }

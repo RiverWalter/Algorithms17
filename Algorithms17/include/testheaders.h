@@ -8,6 +8,7 @@ void RandDblTest(int n);
 void RandTest(int n);
 
 //sorting tests
+void SelectionSortTest(int n);
 void BubbleSortTest(int n);
 void InsertionSortTest(int n);
 void QuickSortTest(int n);
@@ -19,6 +20,7 @@ void HeapSortTest(int n);
 //classical
 void LinearSearchTest(int n);
 void BinarySearchTest(int n);
+void TestShuffle(int n);
 
 //EuclidGCD
 void TestEuclidGCD(int a, int b);

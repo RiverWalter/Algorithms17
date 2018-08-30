@@ -46,6 +46,7 @@ void ConfigConsole();
 void GetDateTime(char *str);
 
 //sorting
+void SelectionSort(int a[], int n);
 void BubbleSort(int a[], int n);
 void InsertionSort(int a[], int n);
 void QuickSort(int a[], int low, int high);
@@ -58,10 +59,13 @@ void HeapSort(int H[], int n);
 int LinearSearch(int a[], int n, int x);
 int BinarySearch(int a[], int n, int x);
 int EuclidGCD(int a, int b);
+void Shuffle(int a[], int n);
 
 //Exhaustive search
 bool PrimalTestTrialDiv(int n);
 void ESSubsetTree(int n);
+void EnumSubsets(int n);
+void EnumSubsetsT(int n);
 void TestES0_1Knapsack(int aN, int aW, int *wa, int *va);
 void TestESTSP(int n, int *aMat);
 void TestESTSP_UT(int n, int *aMat);
@@ -69,6 +73,13 @@ void TestESTSP_UT_F(int n, int *aMat);
 void TestESTSP_UT_N(int n, char *cityNames[], int *aMat);
 void TestESTSP_UT_NP(int n, char *cityNames[], int *aMat);
 void TestESTSP_UT_TH(int n, char *cityNames[], int *aMat);
+void Permuting(int n);
+void PermutingCallerA(int n);
+void PermutingHeapCaller(int n);
+void PermutingSJT(int n);
+
+//Divide and conquer
+void ChessBoardTilingTest(int n);
 
 //Dynamic programming
 void TestTSP_BHK_DPv(int n, int *aMat);
