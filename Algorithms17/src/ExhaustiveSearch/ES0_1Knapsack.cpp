@@ -1,24 +1,23 @@
 #include <stdio.h>
-#include <iostream>
 #include <vector>
 using namespace std;
 
 void Check0_1KSOptimal();
-static vector<int> s;
-static vector <int> w;
-static vector <int> v;
-static vector <int> x;
-static int N, W, V;
+static vector<int> x;
+static vector<int> w;
+static vector<int> v;
+static vector<int> xo;
+static int N, W, Vo;
 
 void ES0_1Knapsack(int n)
 {
     if (n > 0) {
-        s.push_back(0);
+        x.push_back(0);
         ES0_1Knapsack(n - 1);
-        s.pop_back();
-        s.push_back(1);
+        x.pop_back();
+        x.push_back(1);
         ES0_1Knapsack(n - 1);
-        s.pop_back();
+        x.pop_back();
     }
     else
         Check0_1KSOptimal();
@@ -30,27 +29,26 @@ void Check0_1KSOptimal()
     int wt = 0, vt = 0;
     for (int i = 0; i < N; i++)
     {
-        printf("%3d", s[i]);
-        wt += s[i] * w[i];
-        vt += s[i] * v[i];
+        printf("%3d", x[i]);
+        wt += x[i] * w[i];
+        vt += x[i] * v[i];
     }
-    if (wt <= W && vt > V)
+    if (wt <= W && vt > Vo)
     {
-        V = vt;
-        x = s;
+        Vo = vt;
+        xo = x;
     }
-    printf(" %4d %4d %5d\n", wt, vt, V);
+    printf(" %4d %4d %5d\n", wt, vt, Vo);
 }
 void TestES0_1Knapsack(int aN, int aW, 
     int *wa, int *va)
 {
     N = aN;
     W = aW;
-    V = 0;
-    s.clear();
+    Vo = 0;
+    x.clear();
     w.clear();
     v.clear();
-    x.clear();
     for (int i = 0; i < N; i++)
     {
         w.push_back(wa[i]);
@@ -75,7 +73,7 @@ void TestES0_1Knapsack(int aN, int aW,
     printf("  No  ");
     for (int i = 0; i < N; i++)
         printf("%3d", i);
-    printf("   Wt   Vt BestV\n");
+    printf("   Wt   Vt  OptV\n");
     ES0_1Knapsack(N);
 
     printf("The optimal solution:\n");
@@ -84,13 +82,13 @@ void TestES0_1Knapsack(int aN, int aW,
         printf("%3d", i);
     printf("\n");
     printf("x");
-    int bestW = 0;
+    int Wo = 0;
     for (int i = 0; i < N; i++)
     {
-        bestW += x[i] * w[i];
-        printf("%3d", x[i]);
+        Wo += xo[i] * w[i];
+        printf("%3d", xo[i]);
     }
     printf("\n");
-    printf("Best Weight: %d\n", bestW);
-    printf("Best Value: %d\n\n", V);
+    printf("Optimal Weight: %d\n", Wo);
+    printf("Optimal Value: %d\n\n", Vo);
 }

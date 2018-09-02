@@ -33,9 +33,9 @@ int main()
     //TestESTSP_UTA();
     //TestESTSPA();
 
-    //EnumSubsets(3);
+    //EnumSubsets(10);
     //EnumSubsetsT(3);
-    //TestES0_1KnapsackR(10, 16, 26);
+    //TestES0_1KnapsackR(20, 16, 26);
     //TestES0_1KnapsackR();
     TestES0_1KnapsackA();
 
