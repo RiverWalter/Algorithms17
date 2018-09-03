@@ -85,3 +85,6 @@ void ChessBoardTilingTest(int n);
 void TestTSP_BHK_DPv(int n, int *aMat);
 void TestTSP_BHK_DP(int n, int *aMat);
 void TestTSP_BHK_DP_N(int n, char *cityNames[], int *aMat);
+
+//Error Control
+void TestParityCheck(int r, int c, int even);

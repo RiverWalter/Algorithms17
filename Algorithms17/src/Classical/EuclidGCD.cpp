@@ -5,6 +5,6 @@ int EuclidGCD(int a, int b)
 		r = a % b;
 		a = b;
 		b = r;
-	} ;
+	} 
 	return a;
 }

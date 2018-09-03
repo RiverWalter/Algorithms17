@@ -15,6 +15,10 @@ int main()
     if (logFP != stdout)
         fprintf(logFP, "Begin time: %s\n", beginTimeStr);
     clock_t begin = clock();
+    
+    //Error Control
+    //TestParityCheck(4, 15, 0);
+
     //***Dynamic programming
     //TestTSP_BHK_DP_N_SD(17);
     //TestTSP_BHK_DPA();
@@ -33,11 +37,11 @@ int main()
     //TestESTSP_UTA();
     //TestESTSPA();
 
-    //EnumSubsets(10);
+    EnumSubsets(10);
     //EnumSubsetsT(3);
     //TestES0_1KnapsackR(20, 16, 26);
     //TestES0_1KnapsackR();
-    TestES0_1KnapsackA();
+    //TestES0_1KnapsackA();
 
     //ESPermutationTreeT(7);
     //ESPermutationTreeJ(7);
