@@ -2,6 +2,7 @@
 //system headers
 #include <stdio.h>
 #include <iostream>
+#include <vector>
 using namespace std;
 
 //#define Inf SHRT_MAX
@@ -77,6 +78,8 @@ void Permuting(int n);
 void PermutingCallerA(int n);
 void PermutingHeapCaller(int n);
 void PermutingSJT(int n);
+void DFSMCaller(int n, vector<vector<int>> &g);
+void BFSCaller(int n, vector<vector<int>> &g);
 
 //Divide and conquer
 void ChessBoardTilingTest(int n);

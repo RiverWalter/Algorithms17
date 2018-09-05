@@ -203,5 +203,14 @@
     <ClCompile Include="src\ErrorControl\ParityCheck.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="src\ExhaustiveSearch\BFS.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\TestDFS_BFS.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ExhaustiveSearch\DFSM.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

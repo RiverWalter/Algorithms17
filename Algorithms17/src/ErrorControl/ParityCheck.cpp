@@ -32,7 +32,7 @@ void OutputParityCheck(int r, int c, unsigned int *d, int even)
     printf("\nParity check: r=%d, c=%d, even=%d\n\n", r, c, even);
     int mask;
     for (int i = 0; i < r + 1; i++) {
-        printf("%5d: ", d[i] >> 1);
+        printf("%10d: ", d[i] >> 1);
         mask = 1 << c;
         for (int j = 0; j < c + 1; j++)
         {
@@ -48,11 +48,16 @@ int RandBits(int bits)
     int n = 1 << bits;
     return rand() % n;
 }
+int RandBits30(int bits)
+{
+    int n = 1 << bits;
+    return ((rand() << 15) + rand()) % n;
+}
 void TestParityCheck(int r, int c, int even)
 {
     unsigned int *d = new unsigned int[r + 1];
     for (int i = 0; i < r; i++)
-        d[i] = RandBits(c);
+        d[i] = RandBits30(c);
     GenParityCheck(r, c, d, even);
     OutputParityCheck(r, c, d, even);
     delete d;

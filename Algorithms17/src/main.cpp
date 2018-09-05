@@ -17,7 +17,7 @@ int main()
     clock_t begin = clock();
     
     //Error Control
-    //TestParityCheck(4, 15, 0);
+    //TestParityCheck(4, 30, 0);
 
     //***Dynamic programming
     //TestTSP_BHK_DP_N_SD(17);
@@ -37,7 +37,7 @@ int main()
     //TestESTSP_UTA();
     //TestESTSPA();
 
-    EnumSubsets(10);
+    //EnumSubsets(10);
     //EnumSubsetsT(3);
     //TestES0_1KnapsackR(20, 16, 26);
     //TestES0_1KnapsackR();
@@ -59,6 +59,10 @@ int main()
     */
     //PermutingHeapCaller(4);
     //PermutingSJT(3);
+
+    //***Graph
+    TestDFS_BFS('D');
+    //DFSCaller();
 
     //***Classical
     //BinarySearchTest(8);
