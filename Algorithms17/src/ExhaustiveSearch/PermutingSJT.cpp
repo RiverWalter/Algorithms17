@@ -13,7 +13,7 @@ void PermutingSJT(int n)
     Initialize(n);
     OutputOnePerm(n);
     while (int p = GetBiggestMobile(n)) {
-        printf(" p = %d\n", p);
+        //printf(" p = %d\n", p);
         int m = a[p];
         swap(a[p], a[p + d[p]]);
         swap(d[p], d[p + d[p]]);
@@ -52,8 +52,10 @@ void OutputOnePerm(int n)
     printf("%3d:", ++cnt);
     for (int i = 1; i <= n; i++)
         printf("%2d", a[i]);
+    printf("\n");
+    /*
     printf("\n%4c", ' ');
     for (int i = 1; i <= n; i++)
         printf("%+2d", d[i]);
-    printf("\n");
+    printf("\n");*/
 }

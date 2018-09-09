@@ -203,13 +203,31 @@
     <ClCompile Include="src\ErrorControl\ParityCheck.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\ExhaustiveSearch\BFS.cpp">
+    <ClCompile Include="src\ExhaustiveSearch\DFSM.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ExhaustiveSearch\BFSM.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\TestDFSM_BFSM.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\test\TestDFS_BFS.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\ExhaustiveSearch\DFSM.cpp">
+    <ClCompile Include="src\ExhaustiveSearch\DFS.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ExhaustiveSearch\BFS.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ExhaustiveSearch\ESTSP18.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\TestESTSP18.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\TestESTSP18SD.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -33,8 +33,11 @@ void TestPrimalTestTrialDivDetail(int n);
 void TestPrimalTestTrialDivRange(int m, bool detail = false);
 
 //Exhaustive search
+void TestESTSP18SD(int n);
+void TestESTSP18();
 //t: D for DFS, B for BFS
 void TestDFS_BFS(char t);
+void TestDFSM_BFSM(char t);
 void TestES0_1KnapsackA();
 void TestES0_1KnapsackR(int n = 6, int wRange = 20, int vRange = 20);
 void ESPermutationTreeI(int n);

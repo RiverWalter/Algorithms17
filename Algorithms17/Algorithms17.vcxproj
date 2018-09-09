@@ -127,6 +127,8 @@
     <ClCompile Include="src\DP\TSP_BHK_DP_N.cpp" />
     <ClCompile Include="src\ErrorControl\ParityCheck.cpp" />
     <ClCompile Include="src\ExhaustiveSearch\BFS.cpp" />
+    <ClCompile Include="src\ExhaustiveSearch\BFSM.cpp" />
+    <ClCompile Include="src\ExhaustiveSearch\DFS.cpp" />
     <ClCompile Include="src\ExhaustiveSearch\DFSM.cpp" />
     <ClCompile Include="src\ExhaustiveSearch\EnumSubsets.cpp" />
     <ClCompile Include="src\ExhaustiveSearch\EnumSubsetsT.cpp" />
@@ -134,6 +136,7 @@
     <ClCompile Include="src\ExhaustiveSearch\ESPermutationTree.cpp" />
     <ClCompile Include="src\ExhaustiveSearch\ESSubsetTree.cpp" />
     <ClCompile Include="src\ExhaustiveSearch\ESTSP.cpp" />
+    <ClCompile Include="src\ExhaustiveSearch\ESTSP18.cpp" />
     <ClCompile Include="src\ExhaustiveSearch\ESTSP_UT.cpp" />
     <ClCompile Include="src\ExhaustiveSearch\ESTSP_UT_P.cpp" />
     <ClCompile Include="src\ExhaustiveSearch\ESTSP_UT_TH.cpp" />
@@ -154,9 +157,12 @@
     <ClCompile Include="src\Sorting\SelectionSort.cpp" />
     <ClCompile Include="src\test\test.cpp" />
     <ClCompile Include="src\test\TestClassical.cpp" />
+    <ClCompile Include="src\test\TestDFSM_BFSM.cpp" />
     <ClCompile Include="src\test\TestDFS_BFS.cpp" />
     <ClCompile Include="src\test\TestES0_1KnapsackA.cpp" />
     <ClCompile Include="src\test\TestES0_1KnapsackR.cpp" />
+    <ClCompile Include="src\test\TestESTSP18.cpp" />
+    <ClCompile Include="src\test\TestESTSP18SD.cpp" />
     <ClCompile Include="src\test\TestESTSPA.cpp" />
     <ClCompile Include="src\test\TestESTSP_UTA.cpp" />
     <ClCompile Include="src\test\TestESTSP_UT_FA.cpp" />

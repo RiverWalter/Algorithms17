@@ -3,7 +3,7 @@
 using namespace std;
 void DFSM(int u);
 void OutputDFSAdjacencyMatrix();
-void OutputDFSVisitingOrderM();
+void OutputDFSMVisitingOrder();
 static vector<vector<int>> G;
 static vector<bool> Visited;
 static vector<int> Order;
@@ -18,7 +18,7 @@ void DFSMCaller(int n, vector<vector<int>> &g)
     for (int i = 0; i < n; i++)
         Visited.push_back(false);
     DFSM(0);
-    OutputDFSVisitingOrderM();
+    OutputDFSMVisitingOrder();
 }
 void DFSM(int u)
 {
@@ -39,7 +39,7 @@ void OutputDFSAdjacencyMatrix()
         printf("\n");
     }
 }
-void OutputDFSVisitingOrderM()
+void OutputDFSMVisitingOrder()
 {
     printf("DFS visiting order: ");
     for (int i = 0; i < N; i++)

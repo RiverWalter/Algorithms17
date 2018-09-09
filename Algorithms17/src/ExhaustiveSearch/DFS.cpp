@@ -1,60 +1,48 @@
 #include <stdio.h>
 #include <vector>
-#include <queue>
 using namespace std;
-void BFS(int u);
-void OutputBFSAdjacencyList();
-void OutputBFSVisitingOrder();
+void DFS(int u);
+void OutputDFSAdjacencyList();
+void OutputDFSVisitingOrder();
 static vector<vector<int>> G;
 static vector<bool> Visited;
 static vector<int> Order;
 static int N;
-void BFSCaller(int n, vector<vector<int>> &g)
+void DFSCaller(int n, vector<vector<int>> &g)
 {
     N = n;
     G = g;
-    OutputBFSAdjacencyList();
+    OutputDFSAdjacencyList();
     Visited.clear();
     Order.clear();
     for (int i = 0; i < n; i++)
         Visited.push_back(false);
-    BFS(0);
-    OutputBFSVisitingOrder();
+    DFS(0);
+    OutputDFSVisitingOrder();
 }
-void BFS(int u)
+void DFS(int u)
 {
-    queue<int> q;
     Visited[u] = true;
     Order.push_back(u);
-    q.push(u);
-    while (!q.empty())
-    {
-        int v = q.front();
-        q.pop();
-        for (auto w : G[v])
-            if (!Visited[w])
-            {
-                Visited[w] = true;
-                Order.push_back(w);
-                q.push(w);
-            }
-    }
+    for (auto v: G[u])
+        if (!Visited[v])
+            DFS(v);
 }
-void OutputBFSAdjacencyList()
+void OutputDFSAdjacencyList()
 {
     printf("N = %d\n", N);
     printf("The adjacency list:\n");
     for (int i = 0; i < N; i++)
     {
         printf("%3d: ", i + 1);
-        for (auto j: G[i])
+        for (auto j : G[i])
             printf("%2d", j + 1);
         printf("\n");
     }
 }
-void OutputBFSVisitingOrder()
+void OutputDFSVisitingOrder()
 {
-    printf("BFS visiting order: ");
+    printf("DFS visiting order: ");
     for (int i = 0; i < N; i++)
     {
         if (i != 0)

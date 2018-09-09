@@ -36,6 +36,8 @@ int main()
     //TestESTSP_UT_FA();
     //TestESTSP_UTA();
     //TestESTSPA();
+    //TestESTSP18();
+    //TestESTSP18SD(10);
 
     //EnumSubsets(10);
     //EnumSubsetsT(3);
@@ -49,7 +51,7 @@ int main()
     //ESSubsetTree(7);
     //TestPrimalTestTrialDivRange(100, true);
     //PermutingCaller(4);
-    //Permuting(4);
+    //Permuting(10);
     /*
     PermutingCallerA(1);
     PermutingCallerA(2);
@@ -58,10 +60,11 @@ int main()
     PermutingCallerA(5);
     */
     //PermutingHeapCaller(4);
-    //PermutingSJT(3);
+    //PermutingSJT(7);
 
     //***Graph
     TestDFS_BFS('D');
+    //TestDFSM_BFSM('B');
     //DFSCaller();
 
     //***Classical
