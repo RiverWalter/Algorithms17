@@ -59,6 +59,7 @@ void HeapSort(int H[], int n);
 //classical
 int LinearSearch(int a[], int n, int x);
 int BinarySearch(int a[], int n, int x);
+int BinarySearchR(int a[], int low, int high, int x);
 int EuclidGCD(int a, int b);
 void Shuffle(int a[], int n);
 
@@ -81,8 +82,8 @@ void PermutingHeapCaller(int n);
 void PermutingSJT(int n);
 void DFSMCaller(int n, vector<vector<int>> &g);
 void BFSMCaller(int n, vector<vector<int>> &g);
-void DFSCaller(int n, vector<vector<int>> &g);
-void BFSCaller(int n, vector<vector<int>> &g);
+void DFSCaller(int n, vector<vector<int>> &g, int v0);
+void BFSCaller(int n, vector<vector<int>> &g, int v0);
 
 //Divide and conquer
 void ChessBoardTilingTest(int n);

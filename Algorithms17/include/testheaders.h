@@ -20,6 +20,7 @@ void HeapSortTest(int n);
 //classical
 void LinearSearchTest(int n);
 void BinarySearchTest(int n);
+void BinarySearchRTest(int n);
 void TestShuffle(int n);
 
 //EuclidGCD

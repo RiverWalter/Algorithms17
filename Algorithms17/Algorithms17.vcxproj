@@ -118,6 +118,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Classical\BinarySearch.cpp" />
+    <ClCompile Include="src\Classical\BinarySearchR.cpp" />
     <ClCompile Include="src\Classical\EuclidGCD.cpp" />
     <ClCompile Include="src\Classical\LinearSearch.cpp" />
     <ClCompile Include="src\Classical\Shuffle.cpp" />

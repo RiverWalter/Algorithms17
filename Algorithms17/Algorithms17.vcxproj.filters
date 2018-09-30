@@ -230,5 +230,8 @@
     <ClCompile Include="src\test\TestESTSP18SD.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="src\Classical\BinarySearchR.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

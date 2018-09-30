@@ -69,6 +69,7 @@ int main()
 
     //***Classical
     //BinarySearchTest(8);
+    //BinarySearchRTest(8);
     //LinearSearchTest(8);
     //TestEuclidGCDTypicalCases(true);
     //TestEuclidGCDTypicalCases();

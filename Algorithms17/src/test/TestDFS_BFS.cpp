@@ -40,7 +40,7 @@ void TestDFS_BFS(char t)
     };
     for (int i = 0; i < 3; i++)
         if (t == 'D')
-            DFSCaller(n[i], g[i]);
+            DFSCaller(n[i], g[i], 3);
         else
-            BFSCaller(n[i], g[i]);
+            BFSCaller(n[i], g[i], 3);
 }
