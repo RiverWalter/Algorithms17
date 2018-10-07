@@ -13,7 +13,7 @@ void ChessBoardTilingTest(int n)
     int q0 = RandIntN(m);
     ChessBoardTilingCaller(n, p0, q0);
 }
-void ChessBoardTilingCaller(int n, int p0, int q0)
+static void ChessBoardTilingCaller(int n, int p0, int q0)
 {
     int m = 1 << n;
     Chessboard.resize(m);
@@ -23,7 +23,7 @@ void ChessBoardTilingCaller(int n, int p0, int q0)
     ChessboardTiling(0, 0, p0, q0, m);
     OutputChessboard(m);
 }
-void ChessboardTiling(int r, int c, int p, int q, int s)
+static void ChessboardTiling(int r, int c, int p, int q, int s)
 {
     if (s == 1)
         return;
@@ -54,7 +54,7 @@ void ChessboardTiling(int r, int c, int p, int q, int s)
         ChessboardTiling(r + s, c, r + s, c + s - 1, s);
     }
 }
-void OutputChessboard(int m)
+static void OutputChessboard(int m)
 {
     printf("%3c", ' ');
     for (int i = 0; i < m; i++)
@@ -68,7 +68,7 @@ void OutputChessboard(int m)
     }
 }
 //Generate one random integer in the range [0, m)
-int RandIntN(int n)
+static int RandIntN(int n)
 {
     return rand() % (n);
 }

@@ -28,7 +28,7 @@ int main()
     //TestESTSP_UT_SD_TH(7, 7);
 
     //Divide and conquer
-    //ChessBoardTilingTest(3);
+    ChessBoardTilingTest(3);
 
     //***Exhaustive search
     //TestESTSP_UT_SD_P(7, 7);
@@ -39,7 +39,7 @@ int main()
     //TestESTSP18();
     //TestESTSP18SD(10);
 
-    EnumSubsets(4);
+    //EnumSubsets(4);
     //EnumSubsetsT(3);
     //TestES0_1KnapsackR(20, 16, 26);
     //TestES0_1KnapsackR();
@@ -51,7 +51,7 @@ int main()
     //ESSubsetTree(7);
     //TestPrimalTestTrialDivRange(100, true);
     //PermutingCaller(4);
-    Permuting(4);
+    //Permuting(4);
     /*
     PermutingCallerA(1);
     PermutingCallerA(2);
