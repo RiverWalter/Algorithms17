@@ -1,4 +1,3 @@
-//√∞≈›≈≈–ÚÀ„∑®
 #include <utility>
 using namespace std;
 void BubbleSort(int a[], int n)

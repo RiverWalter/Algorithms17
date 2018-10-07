@@ -1,4 +1,3 @@
-//¿ìËÙÅÅĞòËã·¨
 #include <utility>
 using namespace std;
 int partition(int a[], int low, int high);

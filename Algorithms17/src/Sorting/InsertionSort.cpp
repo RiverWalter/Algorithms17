@@ -1,4 +1,3 @@
-//≤Â»Î≈≈–ÚÀ„∑®
 void InsertionSort(int a[],int n)
 {
     int x, j;

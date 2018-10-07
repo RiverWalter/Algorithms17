@@ -1,4 +1,3 @@
-//合并排序算法
 void Merge2SortedSubArr(int a[], int p, int q, int r);
 
 void MergeSort(int a[], int low, int high)
@@ -10,7 +9,6 @@ void MergeSort(int a[], int low, int high)
         Merge2SortedSubArr(a, low, mid, high);
     }
 }
-//合并两个相邻有序子数组的线性算法
 void Merge2SortedSubArr(int a[], int p, int q, int r)
 {
     int *b = new int[r + 1];
