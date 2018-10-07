@@ -1,4 +1,3 @@
-//—°‘Ò≈≈–ÚÀ„∑®
 #include <utility>
 using namespace std;
 void SelectionSort(int a[], int n)
