@@ -2,7 +2,7 @@
 #include <vector>
 #include <queue>
 using namespace std;
-void BFS(int u);
+void BFS(int v);
 void OutputAdjacencyList();
 void OutputBFSVisitingOrder();
 void Initialization();
@@ -27,14 +27,14 @@ void BFS(int v)
     q.push(v);
     while (!q.empty())
     {
-        int u = q.front();
+        v = q.front();
         q.pop();
-        for (auto w : G[u])
-            if (!Visited[w])
+        for (auto u : G[v])
+            if (!Visited[u])
             {
-                Visited[w] = true;
-                Order.push_back(w);
-                q.push(w);
+                Visited[u] = true;
+                Order.push_back(u);
+                q.push(u);
             }
     }
 }

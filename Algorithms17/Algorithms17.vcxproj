@@ -22,7 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{13ECBCD4-71A6-4A75-BC22-6DFEA45A0DC5}</ProjectGuid>
     <RootNamespace>Algorithms17</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -120,6 +120,7 @@
     <ClCompile Include="src\Classical\BinarySearch.cpp" />
     <ClCompile Include="src\Classical\BinarySearchR.cpp" />
     <ClCompile Include="src\Classical\EuclidGCD.cpp" />
+    <ClCompile Include="src\Classical\EuclidGCDR.cpp" />
     <ClCompile Include="src\Classical\LinearSearch.cpp" />
     <ClCompile Include="src\Classical\Shuffle.cpp" />
     <ClCompile Include="src\DivideAndConquer\ChessBoardTiling.cpp" />
@@ -171,6 +172,7 @@
     <ClCompile Include="src\test\TestESTSP_UT_SD_P.cpp" />
     <ClCompile Include="src\test\TestESTSP_UT_SD_TH.cpp" />
     <ClCompile Include="src\test\TestEuclidGCD.cpp" />
+    <ClCompile Include="src\test\TestEuclidGCDR.cpp" />
     <ClCompile Include="src\test\TestHash.cpp" />
     <ClCompile Include="src\test\TestPrimality.cpp" />
     <ClCompile Include="src\test\TestRandomNumber.cpp" />

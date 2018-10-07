@@ -63,7 +63,7 @@ int main()
     //PermutingSJT(7);
 
     //***Graph
-    TestDFS_BFS('D');
+    //TestDFS_BFS('D');
     //TestDFSM_BFSM('B');
     //DFSCaller();
 
@@ -71,7 +71,8 @@ int main()
     //BinarySearchTest(8);
     //BinarySearchRTest(8);
     //LinearSearchTest(8);
-    //TestEuclidGCDTypicalCases(true);
+	TestEuclidGCDTypicalCasesR();
+	//TestEuclidGCDTypicalCases(true);
     //TestEuclidGCDTypicalCases();
     //TestEuclidGCDSteps(168, 180);
     //TestEuclidGCDSteps(252, 105);

@@ -233,5 +233,11 @@
     <ClCompile Include="src\Classical\BinarySearchR.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="src\Classical\EuclidGCDR.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\TestEuclidGCDR.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
