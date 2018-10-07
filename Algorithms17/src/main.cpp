@@ -81,10 +81,10 @@ int main()
 
     //***Sorting
     //HeapSortTest(8);
-	MaxHeapifyTest(8);
+	//MaxHeapifyTest(8);
     //MergeSortTest(10);
-    //Merge2SortedSubArrTest(3, 4);
-	//QuickSortTest(1000000);
+	TwoWayMergeSortTest(3, 4);
+	//QuickSortTest(10);
 	//InsertionSortTest(100000);
 	//BubbleSortTest(10);
     //SelectionSortTest(10);

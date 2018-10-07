@@ -51,7 +51,7 @@ void SelectionSort(int a[], int n);
 void BubbleSort(int a[], int n);
 void InsertionSort(int a[], int n);
 void QuickSort(int a[], int low, int high);
-void Merge2SortedSubArr(int a[], int p, int q, int r);
+void TwoWayMergeSort(int a[], int p, int q, int r);
 void MergeSort(int a[], int low, int high);
 void MaxHeapify(int H[], int n);
 void HeapSort(int H[], int n);

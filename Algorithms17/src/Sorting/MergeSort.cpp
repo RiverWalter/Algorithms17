@@ -1,4 +1,4 @@
-void Merge2SortedSubArr(int a[], int p, int q, int r);
+void TwoWayMergeSort(int a[], int p, int q, int r);
 
 void MergeSort(int a[], int low, int high)
 {
@@ -6,10 +6,10 @@ void MergeSort(int a[], int low, int high)
         int mid = (low + high)/2;
         MergeSort(a, low, mid);
         MergeSort(a, mid + 1, high);
-        Merge2SortedSubArr(a, low, mid, high);
+		TwoWayMergeSort(a, low, mid, high);
     }
 }
-static void Merge2SortedSubArr(int a[], int p, int q, int r)
+static void TwoWayMergeSort(int a[], int p, int q, int r)
 {
     int *b = new int[r + 1];
     int i = p, j = q + 1, k = p;

@@ -1,4 +1,4 @@
-void Merge2SortedSubArr(int a[], int p, int q, int r)
+void TwoWayMergeSort(int a[], int p, int q, int r)
 {
     int *b = new int[r + 1];
     int i = p, j = q + 1, k = p;

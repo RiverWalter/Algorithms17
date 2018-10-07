@@ -12,7 +12,7 @@ void SelectionSortTest(int n);
 void BubbleSortTest(int n);
 void InsertionSortTest(int n);
 void QuickSortTest(int n);
-void Merge2SortedSubArrTest(int m, int n);
+void TwoWayMergeSortTest(int m, int n);
 void MergeSortTest(int n);
 void MaxHeapifyTest(int n);
 void HeapSortTest(int n);
