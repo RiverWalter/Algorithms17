@@ -11,7 +11,7 @@ void QuickSort(int a[], int low, int high)
     }
 }
 /* N. Lomuto Scheme */
-int partition(int a[], int low, int high)
+static int partition(int a[], int low, int high)
 {
     int pivot = a[high];
     int i = low - 1;
