@@ -39,7 +39,7 @@ int main()
     //TestESTSP18();
     //TestESTSP18SD(10);
 
-    //EnumSubsets(10);
+    EnumSubsets(4);
     //EnumSubsetsT(3);
     //TestES0_1KnapsackR(20, 16, 26);
     //TestES0_1KnapsackR();
@@ -51,7 +51,7 @@ int main()
     //ESSubsetTree(7);
     //TestPrimalTestTrialDivRange(100, true);
     //PermutingCaller(4);
-    //Permuting(10);
+    Permuting(4);
     /*
     PermutingCallerA(1);
     PermutingCallerA(2);
@@ -60,10 +60,10 @@ int main()
     PermutingCallerA(5);
     */
     //PermutingHeapCaller(4);
-    //PermutingSJT(7);
+    //PermutingSJT(4);
 
     //***Graph
-    //TestDFS_BFS('D');
+    //TestDFS_BFS('B');
     //TestDFSM_BFSM('B');
     //DFSCaller();
 
@@ -83,7 +83,7 @@ int main()
     //HeapSortTest(8);
 	//MaxHeapifyTest(8);
     //MergeSortTest(10);
-	TwoWayMergeSortTest(3, 4);
+	//TwoWayMergeSortTest(3, 4);
 	//QuickSortTest(10);
 	//InsertionSortTest(100000);
 	//BubbleSortTest(10);

@@ -19,14 +19,14 @@ void EnumSubsets(int n)
         printf("\n");
     }
 }
-void OutputOneSubsetBinary()
+static void OutputOneSubsetBinary()
 {
     static int cnt = 0;
     printf("%03d: ", ++cnt);
     for (int i = x.size() - 1; i >= 0; i--)
         printf("%d", x[i]);
 }
-void OutputOneSubset()
+static void OutputOneSubset()
 {
     printf("; {");
     int k = 0;

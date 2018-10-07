@@ -22,7 +22,7 @@ void PermutingSJT(int n)
     }
 }
 
-int GetBiggestMobile(int n)
+static int GetBiggestMobile(int n)
 {
     int p = 0;
     for (int i = 1; i <= n; i++)
@@ -31,14 +31,14 @@ int GetBiggestMobile(int n)
     return p;
 }
 
-void Reverse(int m, int n)
+static void Reverse(int m, int n)
 {
     for (int i = 1; i <= n; i++)
         if (a[i] > m)
             d[i] *= -1;
 }
 
-void Initialize(int n)
+static void Initialize(int n)
 {
     for (int i = 1; i <= n; i++) {
         a[i] = i;
@@ -47,15 +47,14 @@ void Initialize(int n)
     a[0] = n + 1;
     a[n + 1] = n + 1;
 }
-void OutputOnePerm(int n)
+static void OutputOnePerm(int n)
 {
     printf("%3d:", ++cnt);
     for (int i = 1; i <= n; i++)
         printf("%2d", a[i]);
     printf("\n");
-    /*
     printf("\n%4c", ' ');
     for (int i = 1; i <= n; i++)
         printf("%+2d", d[i]);
-    printf("\n");*/
+    printf("\n");
 }
