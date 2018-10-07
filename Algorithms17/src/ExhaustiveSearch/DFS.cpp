@@ -21,7 +21,7 @@ void DFSCaller(int n, vector<vector<int>> &g, int v0)
     OutputDFSVisitingOrder();
     Finalization();
 }
-void DFS(int v)
+static void DFS(int v)
 {
     Visited[v] = true;
     PreOrder.push_back(new pair<int, int>(v, ++Order));

@@ -19,7 +19,7 @@ void BFSCaller(int n, vector<vector<int>> &g, int v0)
     BFS(v0);
     OutputBFSVisitingOrder();
 }
-void BFS(int v)
+static void BFS(int v)
 {
     queue<int> q;
     Visited[v] = true;
