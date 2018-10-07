@@ -71,7 +71,7 @@ int main()
     //BinarySearchTest(8);
     //BinarySearchRTest(8);
     //LinearSearchTest(8);
-	TestEuclidGCDTypicalCasesR();
+	//TestEuclidGCDTypicalCasesR();
 	//TestEuclidGCDTypicalCases(true);
     //TestEuclidGCDTypicalCases();
     //TestEuclidGCDSteps(168, 180);
@@ -81,9 +81,9 @@ int main()
 
     //***Sorting
     //HeapSortTest(8);
-    //MakeHeapATest(8);
-    //MergeSortTest(100000);
-    //Merge2SortedSubArrATest(3, 4);
+	MaxHeapifyTest(8);
+    //MergeSortTest(10);
+    //Merge2SortedSubArrTest(3, 4);
 	//QuickSortTest(1000000);
 	//InsertionSortTest(100000);
 	//BubbleSortTest(10);

@@ -75,7 +75,7 @@ void QuickSortTest(int n)
     }
     delete a;
 }
-void Merge2SortedSubArrATest(int m, int n)
+void Merge2SortedSubArrTest(int m, int n)
 {
     int k = m + n;
     int *a = new int[k];
@@ -87,7 +87,7 @@ void Merge2SortedSubArrATest(int m, int n)
     BubbleSort(a + m, n);
     printf("子数组排序：\n");
     Print1DArr(a, k);
-    Merge2SortedSubArrA(a, 0, m - 1, k - 1);
+    Merge2SortedSubArr(a, 0, m - 1, k - 1);
     printf("合并后：\n");
     Print1DArr(a, k);
     delete a;
@@ -111,14 +111,14 @@ void MergeSortTest(int n)
     }
     delete a;
 }
-void MakeHeapATest(int n)
+void MaxHeapifyTest(int n)
 {
     int *a = new int[n];
     printf("测试建堆算法：\n");
     RandRangeArr(n, 0, 100, a);
     printf("建堆前数组:\n");
     Print1DArr(a, n);
-    MakeHeapA(a, n);
+	MaxHeapify(a, n);
     printf("建堆后数组:\n");
     Print1DArr(a, n);
     delete a;

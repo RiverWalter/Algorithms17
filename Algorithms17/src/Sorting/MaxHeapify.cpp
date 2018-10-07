@@ -1,14 +1,14 @@
 #include <utility>
 using namespace std; 
-void SiftDownA(int H[], int n, int i);
-void MakeHeapA(int H[], int n)
+void SiftDown(int H[], int n, int i);
+void MaxHeapify(int H[], int n)
 {
     for (int i = n / 2 - 1; i >= 0; i--) {
-        SiftDownA(H, n, i);
+        SiftDown(H, n, i);
     }
 }
 
-void SiftDownA(int H[], int n, int i)
+static void SiftDown(int H[], int n, int i)
 {
     bool done = false;
     while (!done && ((i = 2 * i + 1) < n)) {

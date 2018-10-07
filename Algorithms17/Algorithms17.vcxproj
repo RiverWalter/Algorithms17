@@ -152,7 +152,7 @@
     <ClCompile Include="src\Sorting\BubbleSort.cpp" />
     <ClCompile Include="src\Sorting\HeapSort.cpp" />
     <ClCompile Include="src\Sorting\InsertionSort.cpp" />
-    <ClCompile Include="src\Sorting\MakeHeap.cpp" />
+    <ClCompile Include="src\Sorting\MaxHeapify.cpp" />
     <ClCompile Include="src\Sorting\Merge2SortedSubArrA.cpp" />
     <ClCompile Include="src\Sorting\MergeSort.cpp" />
     <ClCompile Include="src\Sorting\QuickSort.cpp" />

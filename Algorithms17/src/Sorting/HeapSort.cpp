@@ -13,14 +13,14 @@ void HeapSort(int H[], int n)
 }
 
 
-void MakeHeap(int H[], int n)
+static void MakeHeap(int H[], int n)
 {
     for (int i = n / 2 - 1; i >= 0; i--) {
         SiftDown(H, n, i);
     }
 }
 
-void SiftDown(int H[], int n, int i)
+static void SiftDown(int H[], int n, int i)
 {
     bool done = false;
     while (!done && (i = 2 * i + 1) < n) {

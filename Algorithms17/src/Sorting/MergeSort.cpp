@@ -9,7 +9,7 @@ void MergeSort(int a[], int low, int high)
         Merge2SortedSubArr(a, low, mid, high);
     }
 }
-void Merge2SortedSubArr(int a[], int p, int q, int r)
+static void Merge2SortedSubArr(int a[], int p, int q, int r)
 {
     int *b = new int[r + 1];
     int i = p, j = q + 1, k = p;

@@ -47,9 +47,6 @@
     <ClCompile Include="src\Sorting\InsertionSort.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\Sorting\MakeHeap.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="src\Sorting\Merge2SortedSubArrA.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -237,6 +234,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\test\TestEuclidGCDR.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Sorting\MaxHeapify.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
