@@ -236,7 +236,7 @@
     <ClCompile Include="src\Sorting\MaxHeapify.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\Sorting\TwoWayMergeSort.cpp">
+    <ClCompile Include="src\Sorting\TwoWayMerge.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

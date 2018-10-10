@@ -28,7 +28,7 @@ int main()
     //TestESTSP_UT_SD_TH(7, 7);
 
     //Divide and conquer
-    ChessBoardTilingTest(3);
+    //ChessBoardTilingTest(3);
 
     //***Exhaustive search
     //TestESTSP_UT_SD_P(7, 7);
@@ -83,7 +83,7 @@ int main()
     //HeapSortTest(8);
 	//MaxHeapifyTest(8);
     //MergeSortTest(10);
-	//TwoWayMergeSortTest(3, 4);
+	TwoWayMergeTest(3, 4);
 	//QuickSortTest(10);
 	//InsertionSortTest(100000);
 	//BubbleSortTest(10);

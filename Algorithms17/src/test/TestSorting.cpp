@@ -75,7 +75,7 @@ void QuickSortTest(int n)
     }
     delete a;
 }
-void TwoWayMergeSortTest(int m, int n)
+void TwoWayMergeTest(int m, int n)
 {
     int k = m + n;
     int *a = new int[k];
@@ -87,7 +87,7 @@ void TwoWayMergeSortTest(int m, int n)
     BubbleSort(a + m, n);
     printf("子数组排序：\n");
     Print1DArr(a, k);
-	TwoWayMergeSort(a, 0, m - 1, k - 1);
+	TwoWayMerge(a, 0, m - 1, k - 1);
     printf("合并后：\n");
     Print1DArr(a, k);
     delete a;
