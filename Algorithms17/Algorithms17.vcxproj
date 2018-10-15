@@ -124,6 +124,8 @@
     <ClCompile Include="src\Classical\LinearSearch.cpp" />
     <ClCompile Include="src\Classical\Shuffle.cpp" />
     <ClCompile Include="src\DivideAndConquer\ChessBoardTiling.cpp" />
+    <ClCompile Include="src\DP\DP_01Knapsack.cpp" />
+    <ClCompile Include="src\DP\LSEditDist.cpp" />
     <ClCompile Include="src\DP\TSP_BHK_DP.cpp" />
     <ClCompile Include="src\DP\TSP_BHK_DPv.cpp" />
     <ClCompile Include="src\DP\TSP_BHK_DP_N.cpp" />
@@ -174,6 +176,7 @@
     <ClCompile Include="src\test\TestEuclidGCD.cpp" />
     <ClCompile Include="src\test\TestEuclidGCDR.cpp" />
     <ClCompile Include="src\test\TestHash.cpp" />
+    <ClCompile Include="src\test\TestLSEditDist.cpp" />
     <ClCompile Include="src\test\TestPrimality.cpp" />
     <ClCompile Include="src\test\TestRandomNumber.cpp" />
     <ClCompile Include="src\test\TestShuffle.cpp" />

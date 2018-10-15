@@ -20,6 +20,7 @@ int main()
     //TestParityCheck(4, 30, 0);
 
     //***Dynamic programming
+	TestLSEditDist();
     //TestTSP_BHK_DP_N_SD(17);
     //TestTSP_BHK_DPA();
     //TestTSP_BHK_DPvA();
@@ -83,7 +84,7 @@ int main()
     //HeapSortTest(8);
 	//MaxHeapifyTest(8);
     //MergeSortTest(10);
-	TwoWayMergeTest(3, 4);
+	//TwoWayMergeTest(3, 4);
 	//QuickSortTest(10);
 	//InsertionSortTest(100000);
 	//BubbleSortTest(10);

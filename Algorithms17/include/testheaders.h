@@ -56,6 +56,7 @@ void TestESTSP_UT_SD_P(int low, int high);
 void TestESTSP_UT_SD_TH(int low, int high);
 
 //Dynamic programming
+void TestLSEditDist();
 void TestTSP_BHK_DPvA();
 void TestTSP_BHK_DPA();
 void TestTSP_BHK_DP_N_SD(int N);
