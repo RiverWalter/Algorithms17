@@ -92,7 +92,7 @@ void BFSCaller(int n, vector<vector<int>> &g, int v0);
 void ChessBoardTilingTest(int n);
 
 //Dynamic programming
-int LSEditDist(const string &x, const string &y);
+int LSEditDist(const string &x, const string &y, vector<vector<int>> &E);
 void TestTSP_BHK_DPv(int n, int *aMat);
 void TestTSP_BHK_DP(int n, int *aMat);
 void TestTSP_BHK_DP_N(int n, char *cityNames[], int *aMat);
