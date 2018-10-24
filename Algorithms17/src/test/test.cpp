@@ -6,15 +6,35 @@
 #include <thread>
 #include <vector>
 
+void testString();
 vector<vector<int>> a;
 
 /////////
 void basicTests()
 {
-    printf("RAND_MAX = %d", RAND_MAX);
+	testString();
+    //printf("RAND_MAX = %d", RAND_MAX);
     ////test sizeof
     //int n;
     //printf("sizeof int = %d, size of n = %d", sizeof(int), sizeof(n));
+}
+void testString()
+{
+	string s;
+	printf("s.size: %zd\n", s.size());
+	s.insert(s.cbegin(), '4');
+	printf("4 s.size: %zd, %s\n", s.size(), s.c_str());
+	s.insert(0, 1, '5');
+	printf("5 s.size: %zd, %s\n", s.size(), s.c_str());
+	s.insert(s.cbegin(), '6');
+	printf("6 s.size: %zd, %s\n", s.size(), s.c_str());
+}
+void basicTestsA()
+{
+	//printf("RAND_MAX = %d", RAND_MAX);
+	////test sizeof
+	//int n;
+	//printf("sizeof int = %d, size of n = %d", sizeof(int), sizeof(n));
 }
 void test2Darr()
 {
