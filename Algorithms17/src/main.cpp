@@ -19,8 +19,11 @@ int main()
     //Error Control
     //TestParityCheck(4, 30, 0);
 
+    //Backtracking
+    BKnQueensCaller(8);
+
     //***Dynamic programming
-	TestLSEditDist();
+	//TestLSEditDist();
     //TestTSP_BHK_DP_N_SD(17);
     //TestTSP_BHK_DPA();
     //TestTSP_BHK_DPvA();

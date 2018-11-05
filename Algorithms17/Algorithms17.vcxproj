@@ -117,6 +117,7 @@
     <ClInclude Include="include\testheaders.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\BackTracking\BKnQueens.cpp" />
     <ClCompile Include="src\Classical\BinarySearch.cpp" />
     <ClCompile Include="src\Classical\BinarySearchR.cpp" />
     <ClCompile Include="src\Classical\EuclidGCD.cpp" />
