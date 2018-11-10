@@ -23,7 +23,7 @@ int main()
     //BKnQueensCaller(8);
 
     //***Dynamic programming
-    Test0_1KnapsackDP();
+    TestDP0_1Knapsack();
 	//TestLSEditDist();
     //TestTSP_BHK_DP_N_SD(17);
     //TestTSP_BHK_DPA();

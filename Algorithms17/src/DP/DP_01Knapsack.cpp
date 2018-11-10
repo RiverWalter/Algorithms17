@@ -1,8 +1,8 @@
 #include <vector>
 #include <algorithm>
 using namespace std;
-static int DP_01Knapsack(int n, int W, int w[], int v[]);
-static void Output(int n, int W, int w[], int v[]);
+static int DP_01Knapsack(int n, int W, int *w, int *v);
+static void Output(int n, int W, int *w, int *v);
 static vector<vector<int>> V;
 static vector<int> x;
 void DP_01KnapsackCaller(int n, int W, int *w, int *v)
@@ -13,7 +13,7 @@ void DP_01KnapsackCaller(int n, int W, int *w, int *v)
     DP_01Knapsack(n, W, w, v);
     Output(n, W, w, v);
 }
-static int DP_01Knapsack(int n, int W, int w[], int v[])
+static int DP_01Knapsack(int n, int W, int *w, int *v)
 {
 	for (int i = 1; i <= n; i++)
 		for (int j = 1; j <= W; j++)
@@ -30,7 +30,7 @@ static int DP_01Knapsack(int n, int W, int w[], int v[])
         {   x[i] = 1; j -= w[i - 1];  }
     return V[n][W];
 }
-static void Output(int n, int W, int w[], int v[])
+static void Output(int n, int W, int *w, int *v)
 {
     //inputs
     printf("DP to solve 0-1 knapsack:\n");

@@ -1,5 +1,5 @@
 #include "../../include/headers.h"
-void Test0_1KnapsackDP()
+void TestDP0_1Knapsack()
 {
     //http://www.es.ele.tue.nl/education/5MC10/Solutions/knapsack.pdf
     //ÍõÏş¶«£¬P78£»ÍõÇï·Ò£¬P101

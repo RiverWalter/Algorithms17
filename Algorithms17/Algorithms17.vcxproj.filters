@@ -251,7 +251,7 @@
     <ClCompile Include="src\BackTracking\BKnQueens.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\test\TestES0_1KnapsackDP.cpp">
+    <ClCompile Include="src\test\TestDP0_1Knapsack.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

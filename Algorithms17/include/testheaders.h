@@ -56,7 +56,7 @@ void TestESTSP_UT_SD_P(int low, int high);
 void TestESTSP_UT_SD_TH(int low, int high);
 
 //Dynamic programming
-void Test0_1KnapsackDP();
+void TestDP0_1Knapsack();
 void TestLSEditDist();
 void TestTSP_BHK_DPvA();
 void TestTSP_BHK_DPA();
