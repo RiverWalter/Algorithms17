@@ -20,9 +20,10 @@ int main()
     //TestParityCheck(4, 30, 0);
 
     //Backtracking
-    BKnQueensCaller(8);
+    //BKnQueensCaller(8);
 
     //***Dynamic programming
+    Test0_1KnapsackDP();
 	//TestLSEditDist();
     //TestTSP_BHK_DP_N_SD(17);
     //TestTSP_BHK_DPA();

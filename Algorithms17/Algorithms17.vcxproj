@@ -165,6 +165,7 @@
     <ClCompile Include="src\test\TestDFSM_BFSM.cpp" />
     <ClCompile Include="src\test\TestDFS_BFS.cpp" />
     <ClCompile Include="src\test\TestES0_1KnapsackA.cpp" />
+    <ClCompile Include="src\test\TestES0_1KnapsackDP.cpp" />
     <ClCompile Include="src\test\TestES0_1KnapsackR.cpp" />
     <ClCompile Include="src\test\TestESTSP18.cpp" />
     <ClCompile Include="src\test\TestESTSP18SD.cpp" />
