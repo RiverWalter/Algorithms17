@@ -5,20 +5,19 @@ using namespace std;
 static void Initialization(const string &x, const string &y);
 static int GetLSEditDist(const string &x, const string &y);
 static void GetLSEdits(const string &x, const string &y);
-static void Output(const string &x, const string &y, int d);
+static void Output(const string &x, const string &y, int OptD);
 static void OutputE(const string &x, const string &y);
 static void OutputP(const string &x, const string &y);
 static int m, n;
 static vector<vector<int>> E;
 static vector<vector<char>> P;
 static string xe, ye;
-int LSEditDistCaller(const string &x, const string &y)
+void LSEditDistCaller(const string &x, const string &y)
 {
     Initialization(x, y);
-    int d = GetLSEditDist(x, y);
+    int OptD = GetLSEditDist(x, y);
     GetLSEdits(x, y);
-    Output(x, y, d);
-    return d;
+    Output(x, y, OptD);
 }
 static int GetLSEditDist(const string &x, const string &y)
 {
@@ -83,13 +82,13 @@ static void Initialization(const string &x, const string &y)
     xe.clear();
     ye.clear();
 }
-static void Output(const string &x, const string &y, int d)
+static void Output(const string &x, const string &y, int OptD)
 {
     printf("Levenshtein distance: \n", x.c_str(), y.c_str());
     printf("Strings: %s, %s\n\n", x.c_str(), y.c_str());
     OutputE(x, y);
     OutputP(x, y);
-    printf("Distance: %d\n", d);
+    printf("Distance: %d\n", OptD);
     printf("Edited strings:\n");
     for (auto c : xe)
         printf("%2c", c);

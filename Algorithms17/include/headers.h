@@ -93,7 +93,7 @@ void ChessBoardTilingTest(int n);
 
 //Dynamic programming
 void DP_01KnapsackCaller(int n, int W, int *w, int *v);
-int LSEditDistCaller(const string &x, const string &y);
+void LSEditDistCaller(const string &x, const string &y);
 void TestTSP_BHK_DPv(int n, int *aMat);
 void TestTSP_BHK_DP(int n, int *aMat);
 void TestTSP_BHK_DP_N(int n, char *cityNames[], int *aMat);

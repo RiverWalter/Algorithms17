@@ -126,7 +126,7 @@
     <ClCompile Include="src\Classical\Shuffle.cpp" />
     <ClCompile Include="src\DivideAndConquer\ChessBoardTiling.cpp" />
     <ClCompile Include="src\DP\DP_01Knapsack.cpp" />
-    <ClCompile Include="src\DP\LSEditDist.cpp" />
+    <ClCompile Include="src\CS\AlgorithmD_A\DynamicProgramming\LSEditDist.cpp" />
     <ClCompile Include="src\DP\TSP_BHK_DP.cpp" />
     <ClCompile Include="src\DP\TSP_BHK_DPv.cpp" />
     <ClCompile Include="src\DP\TSP_BHK_DP_N.cpp" />
