@@ -1,18 +1,18 @@
 #include <vector>
 using namespace std;
-static int DP_01Knapsack(int n, int W, int *w, int *v);
+static int DP0_1Knapsack(int n, int W, int *w, int *v);
 static void Output(int n, int W, int *w, int *v, int OptV);
 static vector<vector<int>> V;
 static vector<int> x;
-void DP_01KnapsackCaller(int n, int W, int *w, int *v)
+void DP0_1KnapsackCaller(int n, int W, int *w, int *v)
 {
     V.clear();
     V.resize(n + 1, vector<int>(W + 1, 0));
     x.resize(n + 1);
-    int OptV = DP_01Knapsack(n, W, w, v);
+    int OptV = DP0_1Knapsack(n, W, w, v);
     Output(n, W, w, v, OptV);
 }
-static int DP_01Knapsack(int n, int W, int *w, int *v)
+static int DP0_1Knapsack(int n, int W, int *w, int *v)
 {
     for (int i = 1; i <= n; i++)
         for (int j = 1; j <= W; j++)

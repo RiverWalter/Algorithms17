@@ -28,6 +28,6 @@ void TestDP0_1Knapsack()
 
     for (int i = 0; i < 6; i++)
     {
-        DP_01KnapsackCaller(N[i], W[i], &w[i][0], &v[i][0]);
+        DP0_1KnapsackCaller(N[i], W[i], &w[i][0], &v[i][0]);
     }
 }

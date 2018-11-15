@@ -239,9 +239,6 @@
     <ClCompile Include="src\Sorting\TwoWayMerge.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\DP\DP_01Knapsack.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="src\test\TestLSEditDist.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -252,6 +249,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\CS\AlgorithmD_A\DynamicProgramming\LSEditDist.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DP\DP0_1Knapsack.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
