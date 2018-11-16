@@ -32,9 +32,6 @@
     <ClCompile Include="src\Classical\BinarySearch.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\Classical\EuclidGCD.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="src\Classical\LinearSearch.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -252,6 +249,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\CS\AlgorithmD_A\DynamicProgramming\DP0_1Knapsack.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CS\AlgorithmD_A\Classical\EuclidGCD.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
