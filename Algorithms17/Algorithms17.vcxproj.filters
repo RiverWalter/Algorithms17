@@ -164,9 +164,6 @@
     <ClCompile Include="src\Sorting\SelectionSort.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\Classical\Shuffle.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="src\test\TestShuffle.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -252,6 +249,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\CS\AlgorithmD_A\ExhaustiveSearch\GraphDFS.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CS\AlgorithmD_A\Classical\Shuffle.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

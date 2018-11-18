@@ -123,7 +123,7 @@
     <ClCompile Include="src\CS\AlgorithmD_A\Classical\EuclidGCD.cpp" />
     <ClCompile Include="src\Classical\EuclidGCDR.cpp" />
     <ClCompile Include="src\Classical\LinearSearch.cpp" />
-    <ClCompile Include="src\Classical\Shuffle.cpp" />
+    <ClCompile Include="src\CS\AlgorithmD_A\Classical\Shuffle.cpp" />
     <ClCompile Include="src\DivideAndConquer\ChessBoardTiling.cpp" />
     <ClCompile Include="src\CS\AlgorithmD_A\DynamicProgramming\DP0_1Knapsack.cpp" />
     <ClCompile Include="src\CS\AlgorithmD_A\DynamicProgramming\LSEditDist.cpp" />
