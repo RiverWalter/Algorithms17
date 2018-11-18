@@ -131,9 +131,9 @@
     <ClCompile Include="src\DP\TSP_BHK_DPv.cpp" />
     <ClCompile Include="src\DP\TSP_BHK_DP_N.cpp" />
     <ClCompile Include="src\ErrorControl\ParityCheck.cpp" />
-    <ClCompile Include="src\ExhaustiveSearch\BFS.cpp" />
+    <ClCompile Include="src\CS\AlgorithmD_A\ExhaustiveSearch\GraphBFS.cpp" />
     <ClCompile Include="src\ExhaustiveSearch\BFSM.cpp" />
-    <ClCompile Include="src\ExhaustiveSearch\DFS.cpp" />
+    <ClCompile Include="src\CS\AlgorithmD_A\ExhaustiveSearch\GraphDFS.cpp" />
     <ClCompile Include="src\ExhaustiveSearch\DFSM.cpp" />
     <ClCompile Include="src\ExhaustiveSearch\EnumSubsets.cpp" />
     <ClCompile Include="src\ExhaustiveSearch\EnumSubsetsT.cpp" />

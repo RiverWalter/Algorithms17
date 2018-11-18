@@ -23,7 +23,7 @@ int main()
     //BKnQueensCaller(8);
 
     //***Dynamic programming
-    TestDP0_1Knapsack();
+    //TestDP0_1Knapsack();
 	//TestLSEditDist();
     //TestTSP_BHK_DP_N_SD(17);
     //TestTSP_BHK_DPA();
@@ -68,7 +68,7 @@ int main()
     //PermutingSJT(4);
 
     //***Graph
-    //TestDFS_BFS('B');
+    TestDFS_BFS('D');
     //TestDFSM_BFSM('B');
     //DFSCaller();
 

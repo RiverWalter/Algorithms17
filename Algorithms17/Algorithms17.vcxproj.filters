@@ -206,12 +206,6 @@
     <ClCompile Include="src\test\TestDFS_BFS.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\ExhaustiveSearch\DFS.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\ExhaustiveSearch\BFS.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="src\ExhaustiveSearch\ESTSP18.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -252,6 +246,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\CS\AlgorithmD_A\Classical\EuclidGCD.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CS\AlgorithmD_A\ExhaustiveSearch\GraphBFS.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CS\AlgorithmD_A\ExhaustiveSearch\GraphDFS.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
