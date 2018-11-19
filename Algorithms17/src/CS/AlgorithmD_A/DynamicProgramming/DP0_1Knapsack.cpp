@@ -35,7 +35,7 @@ static void Output(int n, int W, int *w, int *v, int OptV)
 {
     //inputs
     printf("DP to solve 0-1 knapsack:\n");
-    printf("%d objects with knapsack capacity %d.\n", n , W);
+    printf("%d items with knapsack capacity %d.\n", n , W);
     printf("%-6s: ", "Weight");
     for (int i = 0; i < n; i++)
         printf("%3d", w[i]);
