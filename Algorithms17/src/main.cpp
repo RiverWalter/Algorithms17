@@ -23,7 +23,7 @@ int main()
     //BKnQueensCaller(8);
 
     //***Dynamic programming
-    TestDP0_1Knapsack();
+    //TestDP0_1Knapsack();
 	//TestLSEditDist();
     //TestTSP_BHK_DP_N_SD(17);
     //TestTSP_BHK_DPA();
@@ -44,7 +44,7 @@ int main()
     //TestESTSP18();
     //TestESTSP18SD(10);
 
-    //EnumSubsets(4);
+    Subsetting(3);
     //EnumSubsetsT(3);
     //TestES0_1KnapsackR(20, 16, 26);
     //TestES0_1KnapsackR();
@@ -56,7 +56,7 @@ int main()
     //ESSubsetTree(7);
     //TestPrimalTestTrialDivRange(100, true);
     //PermutingCaller(4);
-    //Permuting(4);
+    //PermutingCaller(4);
     /*
     PermutingCallerA(1);
     PermutingCallerA(2);
@@ -90,7 +90,7 @@ int main()
     //MergeSortTest(10);
 	//TwoWayMergeTest(3, 4);
 	//QuickSortTest(10);
-	//InsertionSortTest(100000);
+	//InsertionSortTest(10);
 	//BubbleSortTest(10);
     //SelectionSortTest(10);
 

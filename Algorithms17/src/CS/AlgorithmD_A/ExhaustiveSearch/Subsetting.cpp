@@ -3,14 +3,14 @@ using namespace std;
 void OutputOneSubsetBinary();
 void OutputOneSubset();
 static vector<int> x;
-void EnumSubsets(int n) 
+void Subsetting(int n) 
 {
     if (n > 0) {
         x.push_back(0);
-        EnumSubsets(n - 1);
+        Subsetting(n - 1);
         x.pop_back();
         x.push_back(1);
-        EnumSubsets(n - 1);
+        Subsetting(n - 1);
         x.pop_back();
     } 
     else {

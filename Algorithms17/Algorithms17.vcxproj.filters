@@ -29,27 +29,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Classical\BinarySearch.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Classical\LinearSearch.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Sorting\BubbleSort.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Sorting\HeapSort.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Sorting\InsertionSort.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Sorting\MergeSort.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Sorting\QuickSort.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="src\test\TestClassical.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -161,13 +140,7 @@
     <ClCompile Include="src\test\TestTSP_BHK_DP_N_SD.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\Sorting\SelectionSort.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="src\test\TestShuffle.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\ExhaustiveSearch\Permuting.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\ExhaustiveSearch\PermutingA.cpp">
@@ -176,16 +149,7 @@
     <ClCompile Include="src\ExhaustiveSearch\PermutingHeap.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\ExhaustiveSearch\PermutingSJT.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\ExhaustiveSearch\EnumSubsets.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="src\ExhaustiveSearch\EnumSubsetsT.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DivideAndConquer\ChessBoardTiling.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\ErrorControl\ParityCheck.cpp">
@@ -221,12 +185,6 @@
     <ClCompile Include="src\test\TestEuclidGCDR.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\Sorting\MaxHeapify.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Sorting\TwoWayMerge.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="src\test\TestLSEditDist.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -245,13 +203,55 @@
     <ClCompile Include="src\CS\AlgorithmD_A\Classical\EuclidGCD.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\CS\AlgorithmD_A\ExhaustiveSearch\GraphBFS.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\CS\AlgorithmD_A\ExhaustiveSearch\GraphDFS.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="src\CS\AlgorithmD_A\Classical\Shuffle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CS\AlgorithmD_A\GraphAlgorithms\GraphBFS.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CS\AlgorithmD_A\GraphAlgorithms\GraphDFS.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CS\AlgorithmD_A\Sorting\BubbleSort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CS\AlgorithmD_A\Sorting\InsertionSort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CS\AlgorithmD_A\Sorting\SelectionSort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CS\AlgorithmD_A\Sorting\QuickSort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CS\AlgorithmD_A\Sorting\HeapSortNode\HeapSort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CS\AlgorithmD_A\Sorting\HeapSortNode\MaxHeapify.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CS\AlgorithmD_A\Sorting\MergeSortNode\MergeSort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CS\AlgorithmD_A\Sorting\MergeSortNode\TwoWayMerge.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CS\AlgorithmD_A\ExhaustiveSearch\LinearSearch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CS\AlgorithmD_A\ExhaustiveSearch\Permuting.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CS\AlgorithmD_A\ExhaustiveSearch\PermutingSJT.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CS\AlgorithmD_A\ExhaustiveSearch\Subsetting.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CS\AlgorithmD_A\DivideAndConquer\BinarySearch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CS\AlgorithmD_A\DivideAndConquer\ChessBoardTiling.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

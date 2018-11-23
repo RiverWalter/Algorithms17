@@ -69,7 +69,7 @@ void Shuffle(int a[], int n);
 //Exhaustive search
 bool PrimalTestTrialDiv(int n);
 void ESSubsetTree(int n);
-void EnumSubsets(int n);
+void Subsetting(int n);
 void EnumSubsetsT(int n);
 void TestES0_1Knapsack(int aN, int aW, int *wa, int *va);
 void TestESTSP(int n, int *aMat);
@@ -79,7 +79,7 @@ void TestESTSP_UT_N(int n, char *cityNames[], int *aMat);
 void TestESTSP_UT_NP(int n, char *cityNames[], int *aMat);
 void TestESTSP_UT_TH(int n, char *cityNames[], int *aMat);
 void ESTSP18Caller(int n, vector<vector<int>> aMat);
-void Permuting(int n);
+void PermutingCaller(int n);
 void PermutingCallerA(int n);
 void PermutingHeapCaller(int n);
 void PermutingSJT(int n);
