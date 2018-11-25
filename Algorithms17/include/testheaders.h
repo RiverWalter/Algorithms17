@@ -61,3 +61,6 @@ void TestLSEditDist();
 void TestTSP_BHK_DPvA();
 void TestTSP_BHK_DPA();
 void TestTSP_BHK_DP_N_SD(int N);
+
+//RSA
+void TestExtEucGCD();

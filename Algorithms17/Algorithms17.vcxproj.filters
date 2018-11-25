@@ -254,5 +254,11 @@
     <ClCompile Include="src\CS\AlgorithmD_A\DivideAndConquer\ChessBoardTiling.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="src\CS\AlgorithmD_A\RSA\ExtEucGCD.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\TestRSA.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

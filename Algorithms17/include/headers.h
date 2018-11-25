@@ -5,6 +5,7 @@
 #include <vector>
 #include <algorithm>
 #include <string>
+#include <tuple>
 using namespace std;
 
 //#define Inf SHRT_MAX
@@ -103,3 +104,6 @@ void BKnQueensCaller(int n);
 
 //Error Control
 void TestParityCheck(int r, int c, int even);
+
+//RSA
+tuple<int, int, int>ExtEucGCD(int a, int b);

@@ -1,28 +1,5 @@
 #include "../../include/headers.h"
-
-//EuclidGCD tests
-void TestEuclidGCD(int a, int b)
-{
-    int gcd = EuclidGCD(a, b);
-    printf("The GCD of %d and %d is %d\n", a, b, gcd);
-}
-void TestEuclidGCDSteps(int a, int b)
-{
-    printf("Finding the GCD of %d and %d using Euclid's algorithm\n", a, b);
-    auto a0 = a, b0 = b;
-    printf("\ta\tb\tr\tq\n");
-    int r, q;
-    while (b) {
-        r = a % b;
-        q = a / b;
-        printf("\t%d\t%d\t%d\t%d\n", a, b, r, q);
-        a = b;
-        b = r;
-    } ;
-    printf("\t%d\t%d\t%d\t-\n", a, b, r);
-    printf("The GCD of %d and %d is %d\n", a0, b0, a);
-}
-void TestEuclidGCDTypicalCases(bool showSteps)
+void TestExtEucGCD()
 {
 #define N 22
     int ab[N][2] = {
@@ -59,10 +36,8 @@ void TestEuclidGCDTypicalCases(bool showSteps)
         { 26187, 1533 }
     };
     for (int i = 0; i < N; i++) {
-        if (showSteps)
-            TestEuclidGCDSteps(ab[i][0], ab[i][1]);
-        else
-            TestEuclidGCD(ab[i][0], ab[i][1]);
-        //printf("\n");
+        auto rst = ExtEucGCD(ab[i][0], ab[i][1]);
+        printf("%2d: %d = %d*%d + %d*%d\n", i, 
+            get<0>(rst), ab[i][0], get<1>(rst), ab[i][1], get<2>(rst));
     }
 }

@@ -19,6 +19,9 @@ int main()
     //Error Control
     //TestParityCheck(4, 30, 0);
 
+    //RSA
+    TestExtEucGCD();
+
     //Backtracking
     //BKnQueensCaller(8);
 
@@ -44,7 +47,7 @@ int main()
     //TestESTSP18();
     //TestESTSP18SD(10);
 
-    Subsetting(3);
+    //Subsetting(3);
     //EnumSubsetsT(3);
     //TestES0_1KnapsackR(20, 16, 26);
     //TestES0_1KnapsackR();
