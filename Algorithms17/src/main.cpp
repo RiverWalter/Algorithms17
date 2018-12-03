@@ -20,7 +20,7 @@ int main()
     //TestParityCheck(4, 30, 0);
 
     //RSA
-    TestExtEucGCD();
+    //TestExtEucGCD();
 
     //Backtracking
     //BKnQueensCaller(8);
@@ -71,6 +71,7 @@ int main()
     //PermutingSJT(4);
 
     //***Graph
+    TestDijkstraSSSP(5);
     //TestDFS_BFS('D');
     //TestDFSM_BFSM('B');
     //DFSCaller();

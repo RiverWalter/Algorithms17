@@ -20,3 +20,4 @@ tuple<int, int, int>ExtEucGCD(int a, int b)
     }
     return rst_k;
 }
+

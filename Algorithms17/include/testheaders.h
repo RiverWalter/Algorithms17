@@ -41,8 +41,6 @@ void TestPrimalTestTrialDivRange(int m, bool detail = false);
 void TestESTSP18SD(int n);
 void TestESTSP18();
 //t: D for DFS, B for BFS
-void TestDFS_BFS(char t);
-void TestDFSM_BFSM(char t);
 void TestES0_1KnapsackA();
 void TestES0_1KnapsackR(int n = 6, int wRange = 20, int vRange = 20);
 void ESPermutationTreeI(int n);
@@ -64,3 +62,8 @@ void TestTSP_BHK_DP_N_SD(int N);
 
 //RSA
 void TestExtEucGCD();
+
+//Graph
+void TestDijkstraSSSP(int v0 = 0);
+void TestDFS_BFS(char t);
+void TestDFSM_BFSM(char t);

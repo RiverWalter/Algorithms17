@@ -260,5 +260,11 @@
     <ClCompile Include="src\test\TestRSA.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="src\CS\AlgorithmD_A\GraphAlgorithms\DijkstraSSSP.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\GraphAlgorithms\TestDijkstraSSSP.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
