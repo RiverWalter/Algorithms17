@@ -67,3 +67,6 @@ void TestExtEucGCD();
 void TestDijkstraSSSP(int v0 = 0);
 void TestDFS_BFS(char t);
 void TestDFSM_BFSM(char t);
+
+//Branch and Bound
+void TestBB0_1Knapsack();

@@ -118,6 +118,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\BackTracking\BKnQueens.cpp" />
+    <ClCompile Include="src\CS\AlgorithmD_A\BranchAndBound\BB0_1Knapsack.cpp" />
     <ClCompile Include="src\CS\AlgorithmD_A\DivideAndConquer\BinarySearch.cpp" />
     <ClCompile Include="src\Classical\BinarySearchR.cpp" />
     <ClCompile Include="src\CS\AlgorithmD_A\Classical\EuclidGCD.cpp" />
@@ -164,6 +165,7 @@
     <ClCompile Include="src\CS\AlgorithmD_A\Sorting\SelectionSort.cpp" />
     <ClCompile Include="src\test\GraphAlgorithms\TestDijkstraSSSP.cpp" />
     <ClCompile Include="src\test\test.cpp" />
+    <ClCompile Include="src\test\TestBB0_1Knapsack.cpp" />
     <ClCompile Include="src\test\TestClassical.cpp" />
     <ClCompile Include="src\test\TestDFSM_BFSM.cpp" />
     <ClCompile Include="src\test\TestDFS_BFS.cpp" />

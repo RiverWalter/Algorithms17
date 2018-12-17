@@ -73,7 +73,7 @@ void ESTSP_UT_TH(int no, int i)
 void Init()
 {
     int m = N * (N - 1) / 2;
-    int p, q, ia, ib;
+    //int p, q, ia, ib;
     for (int i = 0; i < N; ++i)
     {
         minDists[i] = Inf;

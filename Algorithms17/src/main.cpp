@@ -71,10 +71,13 @@ int main()
     //PermutingSJT(4);
 
     //***Graph
-    TestDijkstraSSSP(5);
+    //TestDijkstraSSSP(5);
     //TestDFS_BFS('D');
     //TestDFSM_BFSM('B');
     //DFSCaller();
+
+    //Branch and Bound
+    TestBB0_1Knapsack();
 
     //***Classical
     //BinarySearchTest(8);

@@ -110,3 +110,6 @@ void TestParityCheck(int r, int c, int even);
 
 //RSA
 tuple<int, int, int>ExtEucGCD(int a, int b);
+
+//Branch and Bound
+void BB0_1KnapsackCaller(int n, int pW, int *w, int *v);

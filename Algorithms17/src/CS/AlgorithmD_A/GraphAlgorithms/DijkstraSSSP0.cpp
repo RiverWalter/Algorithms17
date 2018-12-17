@@ -3,7 +3,6 @@
 using namespace std;
 static void DijkstraSSSP();
 static void Initialization(int v0);
-static void GenAdjList();
 static int ExtractMin();
 static void SiftDown(int i);
 static void SiftUp(int i);
@@ -27,15 +26,12 @@ void DijkstraSSSPCaller(int n, vector<vector<int>> &w, int v0)
 static void DijkstraSSSP()
 {
     int v, d;
-    while (!Q.empty())
-    {
+    while (!Q.empty()) {
         v = ExtractMin();
         for (auto u: AdjList[v])
-            if (S[u] != -2)
-            {
+            if (S[u] != -2) {
                 d = Dist[v] + W[v][u];
-                if (d < Dist[u])
-                {
+                if (d < Dist[u]) {
                     Dist[u] = d;
                     Prev[u] = v;
                     if (S[u] >= 0)
@@ -76,7 +72,8 @@ static void SiftDown(int i)
 static void SiftUp(int i)
 {
     int p;
-    while (i > 0 && Dist[Q[i]] < Dist[Q[p = i - 1 >> 1]]) {
+    while (i > 0 && Dist[Q[i]] < 
+        Dist[Q[p = i - 1 >> 1]]) {
         S[Q[i]] = p;
         S[Q[p]] = i;
         swap(Q[i], Q[p]);
@@ -89,6 +86,17 @@ static void InsertQ(int w)
     int n = int(Q.size() - 1);
     S[w] = n;
     SiftUp(n);
+}
+static void GenAdjList()
+{
+    AdjList.clear();
+    for (int i = 0; i < N; i++)
+    {
+        AdjList.push_back(vector<int>());
+        for (int j = 0; j < N; j++)
+            if (W[i][j] && W[i][j] != INT_MAX)
+                AdjList[i].push_back(j);
+    }
 }
 static void Initialization(int v0)
 {
@@ -103,17 +111,6 @@ static void Initialization(int v0)
     S.clear();
     S.resize(N, -1);
     S[v0] = 0;
-}
-static void GenAdjList()
-{
-    AdjList.clear();
-    for (int i = 0; i < N; i++)
-    {
-        AdjList.push_back(vector<int>());
-        for (int j = 0; j < N; j++)
-            if (W[i][j] && W[i][j] != INT_MAX)
-                AdjList[i].push_back(j);
-    }
 }
 static void OutputDistMatrix()
 {
