@@ -84,7 +84,7 @@ static void Initialization(const string &x, const string &y)
 }
 static void Output(const string &x, const string &y, int OptD)
 {
-    printf("Levenshtein distance: \n", x.c_str(), y.c_str());
+    printf("Levenshtein distance: \n");
     printf("Strings: %s, %s\n\n", x.c_str(), y.c_str());
     OutputE(x, y);
     OutputP(x, y);
