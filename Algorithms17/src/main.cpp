@@ -77,7 +77,7 @@ int main()
     //DFSCaller();
 
     //Branch and Bound
-    TestBB0_1Knapsack();
+    //TestBB0_1Knapsack();
 
     //***Classical
     //BinarySearchTest(8);
@@ -118,7 +118,7 @@ int main()
     //test1Dto2D();
     //basicOutputTest();
     ////
-    //basicTests();
+    basicTests();
 
     clock_t end = clock();
 

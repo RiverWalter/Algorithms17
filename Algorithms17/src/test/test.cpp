@@ -7,16 +7,24 @@
 #include <vector>
 
 void testString();
+void testFor();
 vector<vector<int>> a;
 
 /////////
 void basicTests()
 {
-	testString();
+    testFor();
+	//testString();
     //printf("RAND_MAX = %d", RAND_MAX);
     ////test sizeof
     //int n;
     //printf("sizeof int = %d, size of n = %d", sizeof(int), sizeof(n));
+}
+void testFor()
+{
+    int i;
+    for (i = 0; i < 5; i++);
+    printf("i after for end: %d\n", i);
 }
 void testString()
 {
