@@ -129,6 +129,7 @@
     <ClCompile Include="src\CS\AlgorithmD_A\DynamicProgramming\DP0_1Knapsack.cpp" />
     <ClCompile Include="src\CS\AlgorithmD_A\DynamicProgramming\LSEditDist.cpp" />
     <ClCompile Include="src\CS\AlgorithmD_A\GraphAlgorithms\DijkstraSSSP.cpp" />
+    <ClCompile Include="src\CS\AlgorithmD_A\GraphAlgorithms\PrimMST.cpp" />
     <ClCompile Include="src\CS\AlgorithmD_A\RSA\ExtEucGCD.cpp" />
     <ClCompile Include="src\DP\TSP_BHK_DP.cpp" />
     <ClCompile Include="src\DP\TSP_BHK_DPv.cpp" />
@@ -164,6 +165,7 @@
     <ClCompile Include="src\CS\AlgorithmD_A\Sorting\QuickSort.cpp" />
     <ClCompile Include="src\CS\AlgorithmD_A\Sorting\SelectionSort.cpp" />
     <ClCompile Include="src\test\GraphAlgorithms\TestDijkstraSSSP.cpp" />
+    <ClCompile Include="src\test\GraphAlgorithms\TestPrimMST.cpp" />
     <ClCompile Include="src\test\test.cpp" />
     <ClCompile Include="src\test\TestBB0_1Knapsack.cpp" />
     <ClCompile Include="src\test\TestClassical.cpp" />

@@ -71,6 +71,7 @@ int main()
     //PermutingSJT(4);
 
     //***Graph
+    TestPrimMST(0);
     //TestDijkstraSSSP(5);
     //TestDFS_BFS('D');
     //TestDFSM_BFSM('B');
@@ -118,7 +119,7 @@ int main()
     //test1Dto2D();
     //basicOutputTest();
     ////
-    basicTests();
+    //basicTests();
 
     clock_t end = clock();
 

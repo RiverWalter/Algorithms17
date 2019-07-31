@@ -88,6 +88,7 @@ void DFSMCaller(int n, vector<vector<int>> &g);
 void BFSMCaller(int n, vector<vector<int>> &g);
 
 //Graph
+void PrimMSTCaller(int n, vector<vector<int>> &w, int v0);
 void DijkstraSSSPCaller(int n, vector<vector<int>> &w, int v0);
 void DFSCaller(int n, vector<vector<int>> &g, int v0);
 void BFSCaller(int n, vector<vector<int>> &g, int v0);
