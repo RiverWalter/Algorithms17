@@ -71,6 +71,7 @@ int main()
     //PermutingSJT(4);
 
     //***Graph
+    TestKruskalMST(0);
     TestPrimMST(0);
     //TestDijkstraSSSP(5);
     //TestDFS_BFS('D');

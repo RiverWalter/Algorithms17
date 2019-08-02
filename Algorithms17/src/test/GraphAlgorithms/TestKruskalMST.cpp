@@ -1,5 +1,5 @@
 #include "../../../include/headers.h"
-void TestPrimMST(int v0 = 0)
+void TestKruskalMST(int v0 = 0)
 {
     int n[] = { 5, 9, 6 };
     vector<vector<vector<int>>> w = {
@@ -13,8 +13,8 @@ void TestPrimMST(int v0 = 0)
             { INT_MAX,      5,      7,      9,      0 }
         },
         {
-            //Prim¡¯s MST for Adjacency List Representation | Greedy Algo-6
-            //https://www.geeksforgeeks.org/prims-mst-for-adjacency-list-representation-greedy-algo-6/
+            //Kruskal¡¯s Minimum Spanning Tree using STL in C++
+            //https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-using-stl-in-c/
             {       0,      4,INT_MAX,INT_MAX,INT_MAX,INT_MAX,INT_MAX,      8,INT_MAX },
             {       4,      0,      8,INT_MAX,INT_MAX,INT_MAX,INT_MAX,     11,INT_MAX },
             { INT_MAX,      8,      0,      7,INT_MAX,      4,INT_MAX,INT_MAX,      2 },
@@ -36,5 +36,5 @@ void TestPrimMST(int v0 = 0)
         },
     };
     for (int i = 1; i < 2; i++)
-        PrimMSTCaller(n[i], w[i], v0);
+        KruskalMSTCaller(n[i], w[i], v0);
 }

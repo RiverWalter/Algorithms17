@@ -64,6 +64,7 @@ void TestTSP_BHK_DP_N_SD(int N);
 void TestExtEucGCD();
 
 //Graph
+void TestKruskalMST(int v0 = 0);
 void TestPrimMST(int v0 = 0);
 void TestDijkstraSSSP(int v0 = 0);
 void TestDFS_BFS(char t);

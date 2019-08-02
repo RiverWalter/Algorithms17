@@ -29,7 +29,7 @@ void TestBB0_1Knapsack()
         { 6, 15, 2, 10 },
         { 10, 5, 15, 7, 6, 18, 3 }
     };
-    int m = N.size();
+    int m = (int)N.size();
     for (int i = 0; i < m; i++)
     {
         BB0_1KnapsackCaller(N[i], W[i], &w[i][0], &v[i][0]);

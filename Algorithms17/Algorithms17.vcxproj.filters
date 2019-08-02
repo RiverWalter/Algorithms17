@@ -278,5 +278,11 @@
     <ClCompile Include="src\test\GraphAlgorithms\TestPrimMST.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="src\test\GraphAlgorithms\TestKruskalMST.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CS\AlgorithmD_A\GraphAlgorithms\KruskalMST.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
