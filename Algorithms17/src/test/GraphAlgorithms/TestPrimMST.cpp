@@ -4,7 +4,7 @@ void TestPrimMST(int v0 = 0)
     int n[] = { 5, 9, 6 };
     vector<vector<vector<int>>> w = {
         {
-            //Prim¡¯s Minimum Spanning Tree (MST) | Greedy Algo-5
+            //Prim's Minimum Spanning Tree (MST) | Greedy Algo-5
             //https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/
             {       0,      2,INT_MAX,      6,INT_MAX },
             {       2,      0,      3,      8,      5 },
@@ -13,7 +13,7 @@ void TestPrimMST(int v0 = 0)
             { INT_MAX,      5,      7,      9,      0 }
         },
         {
-            //Prim¡¯s MST for Adjacency List Representation | Greedy Algo-6
+            //Prim's MST for Adjacency List Representation | Greedy Algo-6
             //https://www.geeksforgeeks.org/prims-mst-for-adjacency-list-representation-greedy-algo-6/
             {       0,      4,INT_MAX,INT_MAX,INT_MAX,INT_MAX,INT_MAX,      8,INT_MAX },
             {       4,      0,      8,INT_MAX,INT_MAX,INT_MAX,INT_MAX,     11,INT_MAX },

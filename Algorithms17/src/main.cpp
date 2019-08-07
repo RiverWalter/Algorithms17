@@ -72,7 +72,7 @@ int main()
 
     //***Graph
     TestKruskalMST(0);
-    TestPrimMST(0);
+    //TestPrimMST(0);
     //TestDijkstraSSSP(5);
     //TestDFS_BFS('D');
     //TestDFSM_BFSM('B');

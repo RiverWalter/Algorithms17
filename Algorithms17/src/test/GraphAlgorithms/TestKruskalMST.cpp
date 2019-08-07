@@ -4,7 +4,7 @@ void TestKruskalMST(int v0 = 0)
     int n[] = { 5, 9, 6 };
     vector<vector<vector<int>>> w = {
         {
-            //Prim¡¯s Minimum Spanning Tree (MST) | Greedy Algo-5
+            //Prim's Minimum Spanning Tree (MST) | Greedy Algo-5
             //https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/
             {       0,      2,INT_MAX,      6,INT_MAX },
             {       2,      0,      3,      8,      5 },
@@ -13,7 +13,7 @@ void TestKruskalMST(int v0 = 0)
             { INT_MAX,      5,      7,      9,      0 }
         },
         {
-            //Kruskal¡¯s Minimum Spanning Tree using STL in C++
+            //Kruskal's Minimum Spanning Tree using STL in C++
             //https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-using-stl-in-c/
             {       0,      4,INT_MAX,INT_MAX,INT_MAX,INT_MAX,INT_MAX,      8,INT_MAX },
             {       4,      0,      8,INT_MAX,INT_MAX,INT_MAX,INT_MAX,     11,INT_MAX },
@@ -35,6 +35,6 @@ void TestKruskalMST(int v0 = 0)
             { 14, INT_MAX, 2, INT_MAX, 9, 0 },
         },
     };
-    for (int i = 1; i < 2; i++)
+    for (int i = 0; i < 2; i++)
         KruskalMSTCaller(n[i], w[i], v0);
 }

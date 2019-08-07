@@ -37,14 +37,14 @@ static void KruskalMST()
     {
         int u = e.second.first;
         int v = e.second.second;
-        int set_u = FindSet(u);
-        int set_v = FindSet(v);
-        if (set_u != set_v)
+        int setU = FindSet(u);
+        int setV = FindSet(v);
+        if (setU != setV)
         {
             MST.push_back(e.second);
             if (MST.size() == N - 1)
                 break;
-            UnionSets(set_u, set_v);
+            UnionSets(setU, setV);
         }
     }
 }
@@ -59,13 +59,12 @@ static int FindSet(int u)
 }
 static void UnionSets(int u, int v)
 {
-    u = FindSet(u), v = FindSet(v);
-    if (DisjointSet[u].Rank > DisjointSet[v].Rank)
+    if (DisjointSet[u].Rank >= DisjointSet[v].Rank)
         DisjointSet[v].Parent = u;
     else
         DisjointSet[u].Parent = v;
     if (DisjointSet[u].Rank == DisjointSet[v].Rank)
-        DisjointSet[v].Rank++;
+        DisjointSet[u].Rank++;
 }
 static void Initialization()
 {
