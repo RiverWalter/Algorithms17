@@ -118,6 +118,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\BackTracking\BKnQueens.cpp" />
+    <ClCompile Include="src\BackTracking\BTnQueens.cpp" />
     <ClCompile Include="src\CS\AlgorithmD_A\BranchAndBound\BB0_1Knapsack.cpp" />
     <ClCompile Include="src\CS\AlgorithmD_A\DivideAndConquer\BinarySearch.cpp" />
     <ClCompile Include="src\Classical\BinarySearchR.cpp" />
@@ -128,17 +129,17 @@
     <ClCompile Include="src\CS\AlgorithmD_A\DivideAndConquer\ChessBoardTiling.cpp" />
     <ClCompile Include="src\CS\AlgorithmD_A\DynamicProgramming\DP0_1Knapsack.cpp" />
     <ClCompile Include="src\CS\AlgorithmD_A\DynamicProgramming\LSEditDist.cpp" />
-    <ClCompile Include="src\CS\AlgorithmD_A\GraphAlgorithms\DijkstraSSSP.cpp" />
-    <ClCompile Include="src\CS\AlgorithmD_A\GraphAlgorithms\KruskalMST.cpp" />
-    <ClCompile Include="src\CS\AlgorithmD_A\GraphAlgorithms\PrimMST.cpp" />
+    <ClCompile Include="src\CS\AlgorithmD_A\GreedyApproach\DijkstraSSSP.cpp" />
+    <ClCompile Include="src\CS\AlgorithmD_A\GreedyApproach\KruskalMST.cpp" />
+    <ClCompile Include="src\CS\AlgorithmD_A\GreedyApproach\PrimMST.cpp" />
     <ClCompile Include="src\CS\AlgorithmD_A\RSA\ExtEucGCD.cpp" />
     <ClCompile Include="src\DP\TSP_BHK_DP.cpp" />
     <ClCompile Include="src\DP\TSP_BHK_DPv.cpp" />
     <ClCompile Include="src\DP\TSP_BHK_DP_N.cpp" />
     <ClCompile Include="src\ErrorControl\ParityCheck.cpp" />
-    <ClCompile Include="src\CS\AlgorithmD_A\GraphAlgorithms\GraphBFS.cpp" />
+    <ClCompile Include="src\CS\AlgorithmD_A\ExhaustiveSearch\GraphBFS.cpp" />
     <ClCompile Include="src\ExhaustiveSearch\BFSM.cpp" />
-    <ClCompile Include="src\CS\AlgorithmD_A\GraphAlgorithms\GraphDFS.cpp" />
+    <ClCompile Include="src\CS\AlgorithmD_A\ExhaustiveSearch\GraphDFS.cpp" />
     <ClCompile Include="src\ExhaustiveSearch\DFSM.cpp" />
     <ClCompile Include="src\CS\AlgorithmD_A\ExhaustiveSearch\Subsetting.cpp" />
     <ClCompile Include="src\ExhaustiveSearch\EnumSubsetsT.cpp" />

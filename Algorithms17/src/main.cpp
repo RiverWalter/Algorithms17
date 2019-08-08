@@ -23,6 +23,7 @@ int main()
     //TestExtEucGCD();
 
     //Backtracking
+    BTnQueensCaller(4);
     //BKnQueensCaller(8);
 
     //***Dynamic programming
@@ -71,7 +72,7 @@ int main()
     //PermutingSJT(4);
 
     //***Graph
-    TestKruskalMST(0);
+    //TestKruskalMST(0);
     //TestPrimMST(0);
     //TestDijkstraSSSP(5);
     //TestDFS_BFS('D');

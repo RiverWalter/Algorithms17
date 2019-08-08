@@ -206,12 +206,6 @@
     <ClCompile Include="src\CS\AlgorithmD_A\Classical\Shuffle.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\CS\AlgorithmD_A\GraphAlgorithms\GraphBFS.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\CS\AlgorithmD_A\GraphAlgorithms\GraphDFS.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="src\CS\AlgorithmD_A\Sorting\BubbleSort.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -260,9 +254,6 @@
     <ClCompile Include="src\test\TestRSA.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\CS\AlgorithmD_A\GraphAlgorithms\DijkstraSSSP.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="src\test\GraphAlgorithms\TestDijkstraSSSP.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -272,16 +263,28 @@
     <ClCompile Include="src\test\TestBB0_1Knapsack.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\CS\AlgorithmD_A\GraphAlgorithms\PrimMST.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="src\test\GraphAlgorithms\TestPrimMST.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\test\GraphAlgorithms\TestKruskalMST.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\CS\AlgorithmD_A\GraphAlgorithms\KruskalMST.cpp">
+    <ClCompile Include="src\BackTracking\BTnQueens.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CS\AlgorithmD_A\ExhaustiveSearch\GraphBFS.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CS\AlgorithmD_A\ExhaustiveSearch\GraphDFS.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CS\AlgorithmD_A\GreedyApproach\DijkstraSSSP.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CS\AlgorithmD_A\GreedyApproach\KruskalMST.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CS\AlgorithmD_A\GreedyApproach\PrimMST.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
