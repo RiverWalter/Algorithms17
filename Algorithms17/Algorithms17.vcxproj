@@ -117,8 +117,8 @@
     <ClInclude Include="include\testheaders.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\BackTracking\BKnQueens.cpp" />
-    <ClCompile Include="src\BackTracking\BTnQueens.cpp" />
+    <ClCompile Include="src\CS\AlgorithmD_A\BackTracking\BKnQueens.cpp" />
+    <ClCompile Include="src\CS\AlgorithmD_A\BackTracking\BTnQueens.cpp" />
     <ClCompile Include="src\CS\AlgorithmD_A\BranchAndBound\BB0_1Knapsack.cpp" />
     <ClCompile Include="src\CS\AlgorithmD_A\DivideAndConquer\BinarySearch.cpp" />
     <ClCompile Include="src\Classical\BinarySearchR.cpp" />

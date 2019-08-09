@@ -188,9 +188,6 @@
     <ClCompile Include="src\test\TestLSEditDist.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\BackTracking\BKnQueens.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="src\test\TestDP0_1Knapsack.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -269,9 +266,6 @@
     <ClCompile Include="src\test\GraphAlgorithms\TestKruskalMST.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\BackTracking\BTnQueens.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="src\CS\AlgorithmD_A\ExhaustiveSearch\GraphBFS.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -285,6 +279,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\CS\AlgorithmD_A\GreedyApproach\PrimMST.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CS\AlgorithmD_A\BackTracking\BKnQueens.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CS\AlgorithmD_A\BackTracking\BTnQueens.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
