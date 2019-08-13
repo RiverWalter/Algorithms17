@@ -23,7 +23,7 @@ static void GraphColoring(int row)
             if (row == N)
                 Done = true;
             else
-                BTnQueens(row + 1);
+                GraphColoring(row + 1);
         }
 }
 static bool CheckPlacing(int row, int col)
