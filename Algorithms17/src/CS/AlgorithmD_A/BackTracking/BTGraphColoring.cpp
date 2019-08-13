@@ -37,7 +37,7 @@ static bool CheckPlacing(int row, int col)
 static void Output()
 {
     printf("Placement for %d-Queens: \n", N);
-    for (int row = 1; row <= N; row++)
+    for (int row = 0; row < N; row++)
         printf("(%d,%d)\n", row, p[row]);
 }
 
