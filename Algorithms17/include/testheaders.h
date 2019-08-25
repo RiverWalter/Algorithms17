@@ -72,3 +72,6 @@ void TestDFSM_BFSM(char t);
 
 //Branch and Bound
 void TestBB0_1Knapsack();
+
+//Backtracking
+void TestKColoring(int K = 3);

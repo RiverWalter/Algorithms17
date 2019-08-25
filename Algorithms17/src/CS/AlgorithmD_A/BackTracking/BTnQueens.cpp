@@ -17,6 +17,7 @@ void BTnQueensCaller(int n)
 static void BTnQueens(int row)
 {
     for (int col = 0; !Done && col < N; col++)
+    {
         if (CheckPlacing(row, col))
         {
             Col[row] = col;
@@ -25,6 +26,7 @@ static void BTnQueens(int row)
             else
                 BTnQueens(row + 1);
         }
+    }
 }
 static bool CheckPlacing(int row, int col)
 {

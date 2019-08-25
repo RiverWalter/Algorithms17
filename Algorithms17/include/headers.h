@@ -107,6 +107,7 @@ void TestTSP_BHK_DP_N(int n, char *cityNames[], int *aMat);
 //Backtracking
 void BTnQueensCaller(int n);
 void BKnQueensCaller(int n);
+void BTKColoringCaller(int n, vector<vector<int>> &adjM, int k);
 
 //Error Control
 void TestParityCheck(int r, int c, int even);

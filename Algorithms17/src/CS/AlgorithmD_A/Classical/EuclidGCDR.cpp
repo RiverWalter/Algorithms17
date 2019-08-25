@@ -5,3 +5,5 @@ int EuclidGCDR(int a, int b)
 	else
 		return EuclidGCDR(b, a % b);
 }
+
+

@@ -179,9 +179,6 @@
     <ClCompile Include="src\Classical\BinarySearchR.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\Classical\EuclidGCDR.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="src\test\TestEuclidGCDR.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -287,7 +284,13 @@
     <ClCompile Include="src\CS\AlgorithmD_A\BackTracking\BTnQueens.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\CS\AlgorithmD_A\BackTracking\BTGraphColoring.cpp">
+    <ClCompile Include="src\CS\AlgorithmD_A\BackTracking\BTKColoring.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\Backtracking\TestKColoring.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CS\AlgorithmD_A\Classical\EuclidGCDR.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

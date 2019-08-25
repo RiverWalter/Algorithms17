@@ -23,8 +23,9 @@ int main()
     //TestExtEucGCD();
 
     //Backtracking
-    BTnQueensCaller(4);
+    //BTnQueensCaller(4);
     //BKnQueensCaller(8);
+    TestKColoring(2);
 
     //***Dynamic programming
     //TestDP0_1Knapsack();
